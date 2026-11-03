@@ -108,7 +108,7 @@
   },
   {
    "id": 279,
-   "name_ko": "포르쉐 918 폭동",
+   "name_ko": "포르쉐 918 자동차 사냥 본편",
    "name_zh": "保时捷918暴乱",
    "status": "active",
    "total": 57775,
@@ -213,7 +213,7 @@
   },
   {
    "id": 268,
-   "name_ko": "OC 셀렉트",
+   "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "active",
    "total": 329260,
@@ -322,7 +322,7 @@
   },
   {
    "id": 267,
-   "name_ko": "패스 쇼케이스",
+   "name_ko": "Legend Pass 쇼케이스",
    "name_zh": "通行证展览",
    "status": "finished",
    "total": 364479,
@@ -388,7 +388,7 @@
   },
   {
    "id": 272,
-   "name_ko": "911 GT3 R 폭동",
+   "name_ko": "911 GT3 R 자동차 사냥 본편",
    "name_zh": "911 GT3 R 暴乱",
    "status": "finished",
    "total": 51388,
@@ -423,7 +423,7 @@
   },
   {
    "id": 271,
-   "name_ko": "Miura 폭동",
+   "name_ko": "Miura 자동차 사냥 본편",
    "name_zh": "Miura暴乱",
    "status": "finished",
    "total": 32506,
@@ -563,7 +563,7 @@
   },
   {
    "id": 269,
-   "name_ko": "004C 폭동",
+   "name_ko": "004C 자동차 사냥 본편",
    "name_zh": "004C暴乱",
    "status": "finished",
    "total": 34427,
@@ -598,7 +598,7 @@
   },
   {
    "id": 265,
-   "name_ko": "ZENVO TS1 기간 한정 대회",
+   "name_ko": "ZENVO TS1 기간 한정 TLE",
    "name_zh": "ZENVO TS1限时赛事",
    "status": "finished",
    "total": 188370,
@@ -668,7 +668,7 @@
   },
   {
    "id": 244,
-   "name_ko": "OC 셀렉트",
+   "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
    "total": 492388,
@@ -742,7 +742,7 @@
   },
   {
    "id": 263,
-   "name_ko": "E-R9 폭동 대회",
+   "name_ko": "E-R9 TLE",
    "name_zh": "E-R9骚乱赛事",
    "status": "finished",
    "total": 41400,
@@ -777,7 +777,7 @@
   },
   {
    "id": 262,
-   "name_ko": "KTM 폭동",
+   "name_ko": "KTM 자동차 사냥 본편",
    "name_zh": "KTM 暴乱",
    "status": "finished",
    "total": 54343,
@@ -1045,7 +1045,7 @@
   },
   {
    "id": 243,
-   "name_ko": "패스 쇼케이스",
+   "name_ko": "Legend Pass 쇼케이스",
    "name_zh": "通行证展览",
    "status": "finished",
    "total": 355107,
@@ -1146,7 +1146,7 @@
   },
   {
    "id": 251,
-   "name_ko": "TVR SA 폭동",
+   "name_ko": "TVR SA 자동차 사냥 본편",
    "name_zh": "TVR SA 暴乱",
    "status": "finished",
    "total": 24894,
@@ -1309,7 +1309,7 @@
   },
   {
    "id": 246,
-   "name_ko": "玛莎Alfieri 폭동",
+   "name_ko": "玛莎Alfieri 자동차 사냥 본편",
    "name_zh": "玛莎Alfieri暴乱",
    "status": "finished",
    "total": 62328,
@@ -1379,7 +1379,7 @@
   },
   {
    "id": 227,
-   "name_ko": "OC 셀렉트",
+   "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
    "total": 503833,
@@ -1519,7 +1519,7 @@
   },
   {
    "id": 239,
-   "name_ko": "AF10 폭동",
+   "name_ko": "AF10 자동차 사냥 본편",
    "name_zh": "AF10暴乱",
    "status": "finished",
    "total": null,
@@ -1620,7 +1620,7 @@
   },
   {
    "id": 236,
-   "name_ko": "CCXR 기간 한정 대회",
+   "name_ko": "CCXR 기간 한정 TLE",
    "name_zh": "CCXR限时赛事",
    "status": "finished",
    "total": null,
@@ -1655,7 +1655,7 @@
   },
   {
    "id": 226,
-   "name_ko": "패스 쇼케이스",
+   "name_ko": "Legend Pass 쇼케이스",
    "name_zh": "通行证展览",
    "status": "finished",
    "total": null,
@@ -1756,7 +1756,7 @@
   },
   {
    "id": 232,
-   "name_ko": "포르쉐 911 4S 폭동",
+   "name_ko": "포르쉐 911 4S 자동차 사냥 본편",
    "name_zh": "保时捷911 4S 暴乱",
    "status": "finished",
    "total": null,
@@ -1857,7 +1857,7 @@
   },
   {
    "id": 228,
-   "name_ko": "Kepler 폭동",
+   "name_ko": "Kepler 자동차 사냥 본편",
    "name_zh": "Kepler 暴乱",
    "status": "finished",
    "total": null,
@@ -1923,7 +1923,7 @@
   },
   {
    "id": 225,
-   "name_ko": "狼王 기간 한정 대회",
+   "name_ko": "狼王 기간 한정 TLE",
    "name_zh": "狼王限时赛事",
    "status": "finished",
    "total": null,
@@ -1958,7 +1958,7 @@
   },
   {
    "id": 212,
-   "name_ko": "OC 셀렉트",
+   "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
    "total": null,
@@ -2067,7 +2067,7 @@
   },
   {
    "id": 222,
-   "name_ko": "ZondaHP 폭동",
+   "name_ko": "ZondaHP 자동차 사냥 본편",
    "name_zh": "ZondaHP暴乱",
    "status": "finished",
    "total": null,
@@ -2168,7 +2168,7 @@
   },
   {
    "id": 211,
-   "name_ko": "패스 쇼케이스",
+   "name_ko": "Legend Pass 쇼케이스",
    "name_zh": "通行证展览",
    "status": "finished",
    "total": null,
@@ -2234,7 +2234,7 @@
   },
   {
    "id": 217,
-   "name_ko": "Lexus LFA 폭동",
+   "name_ko": "Lexus LFA 자동차 사냥 본편",
    "name_zh": "Lexus LFA 暴乱",
    "status": "finished",
    "total": null,
@@ -2269,7 +2269,7 @@
   },
   {
    "id": 216,
-   "name_ko": "F40 폭동",
+   "name_ko": "F40 자동차 사냥 본편",
    "name_zh": "F40 暴乱",
    "status": "finished",
    "total": null,
@@ -2475,7 +2475,7 @@
   },
   {
    "id": 202,
-   "name_ko": "OC 셀렉트",
+   "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
    "total": null,
@@ -2549,7 +2549,7 @@
   },
   {
    "id": 210,
-   "name_ko": "Project 8 폭동",
+   "name_ko": "Project 8 자동차 사냥 본편",
    "name_zh": "Project 8暴乱",
    "status": "finished",
    "total": null,
@@ -2658,7 +2658,7 @@
   },
   {
    "id": 201,
-   "name_ko": "패스 쇼케이스",
+   "name_ko": "Legend Pass 쇼케이스",
    "name_zh": "通行证展览",
    "status": "finished",
    "total": null,
@@ -2724,7 +2724,7 @@
   },
   {
    "id": 203,
-   "name_ko": "MissR 폭동",
+   "name_ko": "MissR 자동차 사냥 본편",
    "name_zh": "MissR暴乱",
    "status": "finished",
    "total": null,
@@ -2860,7 +2860,7 @@
   },
   {
    "id": 188,
-   "name_ko": "OC 셀렉트",
+   "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
    "total": null,
@@ -2934,7 +2934,7 @@
   },
   {
    "id": 196,
-   "name_ko": "GTE 폭동",
+   "name_ko": "GTE 자동차 사냥 본편",
    "name_zh": "GTE 暴乱",
    "status": "finished",
    "total": null,
@@ -3074,7 +3074,7 @@
   },
   {
    "id": 187,
-   "name_ko": "패스 쇼케이스",
+   "name_ko": "Legend Pass 쇼케이스",
    "name_zh": "通行证展览",
    "status": "finished",
    "total": null,
@@ -3105,7 +3105,7 @@
   },
   {
    "id": 192,
-   "name_ko": "Toyota2023 폭동",
+   "name_ko": "Toyota2023 자동차 사냥 본편",
    "name_zh": "Toyota2023暴乱",
    "status": "finished",
    "total": null,
@@ -3140,7 +3140,7 @@
   },
   {
    "id": 189,
-   "name_ko": "W12 기간 한정 대회",
+   "name_ko": "W12 기간 한정 TLE",
    "name_zh": "W12限时赛事",
    "status": "finished",
    "total": null,
@@ -3276,7 +3276,7 @@
   },
   {
    "id": 181,
-   "name_ko": "黑豹 폭동 특별 이벤트",
+   "name_ko": "黑豹 특별 이벤트",
    "name_zh": "黑豹骚乱特赛",
    "status": "finished",
    "total": null,
@@ -3311,7 +3311,7 @@
   },
   {
    "id": 176,
-   "name_ko": "OC 셀렉트",
+   "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
    "total": null,
@@ -3420,7 +3420,7 @@
   },
   {
    "id": 184,
-   "name_ko": "Valour 폭동",
+   "name_ko": "Valour 자동차 사냥 본편",
    "name_zh": "Valour暴乱",
    "status": "finished",
    "total": null,
@@ -3525,7 +3525,7 @@
   },
   {
    "id": 175,
-   "name_ko": "패스 셀렉트",
+   "name_ko": "Legend Pass Showcase",
    "name_zh": "通行证精选",
    "status": "finished",
    "total": null,
@@ -3556,7 +3556,7 @@
   },
   {
    "id": 179,
-   "name_ko": "CX75 폭동",
+   "name_ko": "CX75 자동차 사냥 본편",
    "name_zh": "CX75暴乱",
    "status": "finished",
    "total": null,
@@ -3626,7 +3626,7 @@
   },
   {
    "id": 165,
-   "name_ko": "OC 셀렉트",
+   "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
    "total": null,
@@ -3735,7 +3735,7 @@
   },
   {
    "id": 173,
-   "name_ko": "EB110 폭동",
+   "name_ko": "EB110 자동차 사냥 본편",
    "name_zh": "EB110暴乱",
    "status": "finished",
    "total": null,
@@ -3805,7 +3805,7 @@
   },
   {
    "id": 166,
-   "name_ko": "패스 쇼케이스",
+   "name_ko": "Legend Pass 쇼케이스",
    "name_zh": "通行证展览",
    "status": "finished",
    "total": null,
@@ -3836,7 +3836,7 @@
   },
   {
    "id": 169,
-   "name_ko": "911 50 years 폭동",
+   "name_ko": "911 50 years 자동차 사냥 본편",
    "name_zh": "911 50 years 暴乱",
    "status": "finished",
    "total": null,
@@ -3871,7 +3871,7 @@
   },
   {
    "id": 170,
-   "name_ko": "莲花Emeya 폭동",
+   "name_ko": "莲花Emeya 자동차 사냥 본편",
    "name_zh": "莲花Emeya暴乱",
    "status": "finished",
    "total": null,
@@ -3941,7 +3941,7 @@
   },
   {
    "id": 164,
-   "name_ko": "Jesko 대회",
+   "name_ko": "Jesko TLE",
    "name_zh": "Jesko赛事",
    "status": "finished",
    "total": null,
@@ -4011,7 +4011,7 @@
   },
   {
    "id": 150,
-   "name_ko": "OC 셀렉트",
+   "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
    "total": null,
@@ -4155,7 +4155,7 @@
   },
   {
    "id": 162,
-   "name_ko": "ENZO 폭동",
+   "name_ko": "ENZO 자동차 사냥 본편",
    "name_zh": "ENZO暴乱",
    "status": "finished",
    "total": null,
@@ -4361,7 +4361,7 @@
   },
   {
    "id": 149,
-   "name_ko": "패스 쇼케이스",
+   "name_ko": "Legend Pass 쇼케이스",
    "name_zh": "通行证展览",
    "status": "finished",
    "total": null,
@@ -4392,7 +4392,7 @@
   },
   {
    "id": 155,
-   "name_ko": "1V10 폭동",
+   "name_ko": "1V10 자동차 사냥 본편",
    "name_zh": "1V10暴乱",
    "status": "finished",
    "total": null,
@@ -4497,7 +4497,7 @@
   },
   {
    "id": 145,
-   "name_ko": "OC 셀렉트[Switch]",
+   "name_ko": "OC Showcase[Switch]",
    "name_zh": "OC精选[Switch]",
    "status": "finished",
    "total": null,
@@ -4536,7 +4536,7 @@
   },
   {
    "id": 142,
-   "name_ko": "패스 쇼케이스[Switch]",
+   "name_ko": "Legend Pass 쇼케이스[Switch]",
    "name_zh": "通行证展览[Switch]",
    "status": "finished",
    "total": null,
@@ -4571,7 +4571,7 @@
   },
   {
    "id": 148,
-   "name_ko": "004 폭동",
+   "name_ko": "004 자동차 사냥 본편",
    "name_zh": "004 暴乱",
    "status": "finished",
    "total": null,
@@ -4867,7 +4867,7 @@
   },
   {
    "id": 137,
-   "name_ko": "XJR-15 폭동[Switch]",
+   "name_ko": "XJR-15 자동차 사냥 본편[Switch]",
    "name_zh": "XJR-15暴乱[Switch]",
    "status": "finished",
    "total": null,
@@ -4902,7 +4902,7 @@
   },
   {
    "id": 139,
-   "name_ko": "XJR-15 폭동",
+   "name_ko": "XJR-15 자동차 사냥 본편",
    "name_zh": "XJR-15暴乱",
    "status": "finished",
    "total": null,
@@ -4937,7 +4937,7 @@
   },
   {
    "id": 136,
-   "name_ko": "F12 Berlinetta 폭동",
+   "name_ko": "F12 Berlinetta 자동차 사냥 본편",
    "name_zh": "F12 Berlinetta 暴乱",
    "status": "finished",
    "total": null,
@@ -5042,7 +5042,7 @@
   },
   {
    "id": 126,
-   "name_ko": "OC 셀렉트",
+   "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
    "total": null,
@@ -5081,7 +5081,7 @@
   },
   {
    "id": 133,
-   "name_ko": "BMW M4GT3 폭동",
+   "name_ko": "BMW M4GT3 자동차 사냥 본편",
    "name_zh": "BMW M4GT3暴乱",
    "status": "finished",
    "total": null,
@@ -5283,7 +5283,7 @@
   },
   {
    "id": 125,
-   "name_ko": "패스 쇼케이스",
+   "name_ko": "Legend Pass 쇼케이스",
    "name_zh": "通行证展览",
    "status": "finished",
    "total": null,
@@ -5314,7 +5314,7 @@
   },
   {
    "id": 128,
-   "name_ko": "TVR SA 폭동",
+   "name_ko": "TVR SA 자동차 사냥 본편",
    "name_zh": "TVR SA 暴乱",
    "status": "finished",
    "total": null,
@@ -5349,7 +5349,7 @@
   },
   {
    "id": 114,
-   "name_ko": "OC 셀렉트",
+   "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
    "total": null,
@@ -5497,7 +5497,7 @@
   },
   {
    "id": 122,
-   "name_ko": "Berlinetta 폭동",
+   "name_ko": "Berlinetta 자동차 사냥 본편",
    "name_zh": "Berlinetta 暴乱",
    "status": "finished",
    "total": null,
@@ -5563,7 +5563,7 @@
   },
   {
    "id": 113,
-   "name_ko": "패스 쇼케이스",
+   "name_ko": "Legend Pass 쇼케이스",
    "name_zh": "通行证展览",
    "status": "finished",
    "total": null,
@@ -5598,7 +5598,7 @@
   },
   {
    "id": 117,
-   "name_ko": "Benz CKL 폭동",
+   "name_ko": "Benz CKL 자동차 사냥 본편",
    "name_zh": "Benz CKL 暴乱",
    "status": "finished",
    "total": null,
@@ -5633,7 +5633,7 @@
   },
   {
    "id": 116,
-   "name_ko": "Toyota 2023 폭동",
+   "name_ko": "Toyota 2023 자동차 사냥 본편",
    "name_zh": "Toyota 2023暴乱",
    "status": "finished",
    "total": null,
@@ -5785,7 +5785,7 @@
   },
   {
    "id": 99,
-   "name_ko": "OC 셀렉트",
+   "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
    "total": null,
@@ -5894,7 +5894,7 @@
   },
   {
    "id": 110,
-   "name_ko": "AF8寻车 폭동",
+   "name_ko": "AF8寻车 자동차 사냥 본편",
    "name_zh": "AF8寻车暴乱",
    "status": "finished",
    "total": null,
@@ -6159,7 +6159,7 @@
   },
   {
    "id": 98,
-   "name_ko": "패스 쇼케이스",
+   "name_ko": "Legend Pass 쇼케이스",
    "name_zh": "通行证展览",
    "status": "finished",
    "total": null,
@@ -6225,7 +6225,7 @@
   },
   {
    "id": 101,
-   "name_ko": "帕加尼BC 폭동",
+   "name_ko": "帕加尼BC 자동차 사냥 본편",
    "name_zh": "帕加尼BC暴乱",
    "status": "finished",
    "total": null,
@@ -6381,7 +6381,7 @@
   },
   {
    "id": 83,
-   "name_ko": "OC 셀렉트",
+   "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
    "total": null,
@@ -6459,7 +6459,7 @@
   },
   {
    "id": 96,
-   "name_ko": "599XX 폭동",
+   "name_ko": "599XX 자동차 사냥 본편",
    "name_zh": "599XX暴乱",
    "status": "finished",
    "total": null,
@@ -6756,7 +6756,7 @@
   },
   {
    "id": 82,
-   "name_ko": "패스 쇼케이스",
+   "name_ko": "Legend Pass 쇼케이스",
    "name_zh": "通行证展览",
    "status": "finished",
    "total": null,
@@ -6787,7 +6787,7 @@
   },
   {
    "id": 87,
-   "name_ko": "C-X75 폭동",
+   "name_ko": "C-X75 자동차 사냥 본편",
    "name_zh": "C-X75暴乱",
    "status": "finished",
    "total": null,
@@ -6822,7 +6822,7 @@
   },
   {
    "id": 88,
-   "name_ko": "Bohema 폭동",
+   "name_ko": "Bohema 자동차 사냥 본편",
    "name_zh": "Bohema暴乱",
    "status": "finished",
    "total": null,
@@ -6990,7 +6990,7 @@
   },
   {
    "id": 78,
-   "name_ko": "시즌OC 셀렉트",
+   "name_ko": "시즌OC Showcase",
    "name_zh": "赛季OC精选",
    "status": "finished",
    "total": null,
@@ -7029,7 +7029,7 @@
   },
   {
    "id": 79,
-   "name_ko": "C宾利 폭동",
+   "name_ko": "C宾利 자동차 사냥 본편",
    "name_zh": "C宾利暴乱",
    "status": "finished",
    "total": null,
@@ -7177,7 +7177,7 @@
   },
   {
    "id": 69,
-   "name_ko": "패스 쇼케이스",
+   "name_ko": "Legend Pass 쇼케이스",
    "name_zh": "通行证展览",
    "status": "finished",
    "total": null,
@@ -7208,7 +7208,7 @@
   },
   {
    "id": 31,
-   "name_ko": "CARRERA 폭동",
+   "name_ko": "CARRERA 자동차 사냥 본편",
    "name_zh": "CARRERA暴乱",
    "status": "finished",
    "total": null,
@@ -7414,7 +7414,7 @@
   },
   {
    "id": 24,
-   "name_ko": "ENZO 폭동🔚",
+   "name_ko": "ENZO 자동차 사냥 본편🔚",
    "name_zh": "ENZO暴乱🔚",
    "status": "finished",
    "total": null,
