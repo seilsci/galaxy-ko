@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>아스팔트 레전드 순위 컷</title>
+<meta name="description" content="狂野飙车传奇 Galaxy 클럽 순위 데이터를 한국어로 보여주는 비공식 페이지">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --concrete: #e6e8eb;
+    --paper: #ffffff;
+    --tarmac: #1d232b;
+    --ink: #1a2029;
+    --muted: #66707c;
+    --line: #d3d7dc;
+    --kerb: #d8392b;
+    --go: #1d7f49;
+    --go-bg: #e1f3e8;
+    --done-bg: #eceef1;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: 1rem; }
+  body {
+    margin: 0;
+    background: var(--concrete);
+    color: var(--ink);
+    font: 400 16px/1.6 "Noto Sans KR", system-ui, sans-serif;
+  }
+  .num { font-family: "Barlow Condensed", "Noto Sans KR", sans-serif; font-variant-numeric: tabular-nums; }
+
+  header.top { background: var(--tarmac); color: #fff; padding: 2.5rem 1.25rem 2rem; }
+  .wrap { max-width: 920px; margin: 0 auto; }
+  header.top h1 { margin: 0; font-size: clamp(1.7rem, 5vw, 2.6rem); line-height: 1.2; font-weight: 700; letter-spacing: -0.01em; }
+  header.top p { margin: .6rem 0 0; color: #b9c1cb; max-width: 56ch; }
+
+  .controls { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; padding: 1.25rem 0 .5rem; }
+  .tabs { display: flex; gap: .4rem; }
+  .tabs button, .controls input {
+    font: inherit; border: 1px solid var(--line); background: var(--paper); color: var(--ink);
+    border-radius: 6px; padding: .5rem .9rem; min-height: 44px;
+  }
+  .tabs button { cursor: pointer; }
+  .tabs button[aria-pressed="true"] { background: var(--tarmac); border-color: var(--tarmac); color: #fff; }
+  .tabs .count { margin-left: .4rem; opacity: .7; }
+  .controls input { flex: 1 1 14rem; min-width: 0; }
+  button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid #2b6cdf; outline-offset: 2px; }
+
+  main { padding-bottom: 2rem; }
+  .event { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; margin-top: 1rem; overflow: hidden; }
+  .event-head { display: grid; grid-template-columns: 1fr auto; gap: .25rem 1rem; padding: 1.1rem 1.25rem .9rem; border-bottom: 1px solid var(--line); }
+  .event-head h2 { margin: 0; font-size: 1.25rem; line-height: 1.35; }
+  .zh { margin: 0; color: var(--muted); font-size: .85rem; grid-column: 1; }
+  .badge { grid-column: 2; grid-row: 1; align-self: start; font-size: .8rem; font-weight: 500; padding: .15rem .6rem; border-radius: 999px; }
+  .badge.active { background: var(--go-bg); color: var(--go); }
+  .badge.finished { background: var(--done-bg); color: var(--muted); }
+  .meta { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: .25rem 1.5rem; margin: .5rem 0 0; font-size: .9rem; color: var(--muted); }
+  .meta strong { color: var(--ink); font-weight: 700; font-size: 1.15rem; }
+
+  .ladder { list-style: none; margin: 0; padding: .5rem 1.25rem 1rem; }
+  .ladder li { display: grid; grid-template-columns: 5.5rem 1fr 7.5rem; align-items: center; gap: .75rem; padding: .35rem 0; }
+  .pct { font-size: .95rem; color: var(--muted); }
+  .bar { height: 10px; background: var(--done-bg); border-radius: 5px; overflow: hidden; }
+  .bar i { display: block; height: 100%; background: var(--kerb); border-radius: 5px; }
+  .rank { text-align: right; font-size: 1.45rem; font-weight: 600; line-height: 1.2; }
+  .rank small { font: 400 .85rem "Noto Sans KR", sans-serif; color: var(--muted); margin-left: .15rem; }
+
+  .empty { margin-top: 2rem; padding: 2rem 1rem; text-align: center; color: var(--muted); }
+  footer { border-top: 1px solid var(--line); padding: 1.25rem; color: var(--muted); font-size: .85rem; text-align: center; }
+  footer a { color: inherit; }
+
+  @media (max-width: 520px) {
+    .ladder li { grid-template-columns: 4.5rem 1fr 6.5rem; gap: .5rem; }
+    .rank { font-size: 1.3rem; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>아스팔트 레전드 순위 컷</h1>
+    <p>대회별로 상위 몇 %에 들려면 몇 위까지 올라가야 하는지 확인하세요. Galaxy 클럽의 데이터를 한국어로 옮긴 비공식 페이지입니다.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="controls">
+    <div class="tabs" role="group" aria-label="대회 상태">
+      <button type="button" data-tab="active" aria-pressed="true">진행 중<span class="count num"></span></button>
+      <button type="button" data-tab="finished" aria-pressed="false">지난 대회<span class="count num"></span></button>
+    </div>
+    <input type="search" id="q" placeholder="대회 이름 검색" aria-label="대회 이름 검색">
+  </div>
+  <main id="list" aria-live="polite"></main>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div id="updated"></div>
+    <div>원본: <a href="https://xeyj7va4zfx8.space.minimax.io/" rel="noopener">狂野飙车传奇排行榜 by Galaxy</a>. 번역은 자동이라 원문과 다를 수 있습니다.</div>
+  </div>
+</footer>
+
+<script>
+const state = { tab: "active", q: "", events: [] };
+const nf = new Intl.NumberFormat("ko-KR");
+const kst = iso => new Date(iso).toLocaleString("ko-KR", {
+  timeZone: "Asia/Seoul", year: "numeric", month: "long", day: "numeric",
+  hour: "2-digit", minute: "2-digit", hour12: false
+});
+
+function el(tag, cls, text) {
+  const node = document.createElement(tag);
+  if (cls) node.className = cls;
+  if (text !== undefined) node.textContent = text;
+  return node;
+}
+
+function renderEvent(ev) {
+  const card = el("article", "event");
+  const head = el("div", "event-head");
+  head.append(el("h2", "", ev.name_ko));
+  head.append(el("span", "badge " + (ev.status === "active" ? "active" : "finished"),
+                 ev.status === "active" ? "진행 중" : "종료"));
+  if (ev.name_zh && ev.name_zh !== ev.name_ko) head.append(el("p", "zh", ev.name_zh));
+
+  const meta = el("p", "meta");
+  const people = el("span", "", "참가자 ");
+  people.append(el("strong", "num", nf.format(ev.total || 0)), "명");
+  meta.append(people, el("span", "", "갱신 " + kst(ev.updated_at)));
+  head.append(meta);
+  card.append(head);
+
+  const ladder = el("ol", "ladder");
+  for (const t of ev.tiers) {
+    const li = el("li");
+    const bar = el("span", "bar");
+    const fill = document.createElement("i");
+    fill.style.width = Math.min(t.pct, 100) + "%";
+    bar.append(fill);
+    const rank = el("span", "rank num", nf.format(t.rank));
+    rank.append(el("small", "", "위"));
+    li.append(el("span", "pct", "상위 " + t.pct + "%"), bar, rank);
+    ladder.append(li);
+  }
+  card.append(ladder);
+  return card;
+}
+
+function render() {
+  const q = state.q.trim().toLowerCase();
+  const byTab = e => (state.tab === "active") === (e.status === "active");
+  const matches = e => !q || (e.name_ko + " " + e.name_zh).toLowerCase().includes(q);
+
+  document.querySelectorAll(".tabs button").forEach(b => {
+    const tab = b.dataset.tab;
+    b.setAttribute("aria-pressed", String(tab === state.tab));
+    b.querySelector(".count").textContent =
+      state.events.filter(e => (tab === "active") === (e.status === "active")).length;
+  });
+
+  const list = document.getElementById("list");
+  list.replaceChildren();
+  const shown = state.events.filter(byTab).filter(matches);
+  if (!shown.length) {
+    list.append(el("p", "empty", q ? "검색 결과가 없습니다. 다른 이름으로 찾아보세요." : "표시할 대회가 없습니다."));
+    return;
+  }
+  shown.forEach(e => list.append(renderEvent(e)));
+}
+
+document.querySelectorAll(".tabs button").forEach(b =>
+  b.addEventListener("click", () => { state.tab = b.dataset.tab; render(); }));
+document.getElementById("q").addEventListener("input", e => { state.q = e.target.value; render(); });
+
+fetch("data.json", { cache: "no-store" })
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data => {
+    state.events = data.events;
+    document.getElementById("updated").textContent = "데이터 기준 " + kst(data.latest_update);
+    render();
+  })
+  .catch(() => {
+    document.getElementById("list").replaceChildren(
+      el("p", "empty", "데이터를 불러오지 못했습니다. 잠시 후 새로고침해 주세요."));
+  });
+</script>
+</body>
+</html>
