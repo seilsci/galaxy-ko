@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parent
 API = "https://jflpzvmpjeeqfkvqppuq.supabase.co/rest/v1/leaderboards"
 PAGE = 100
 HAN = re.compile(r"[\u4e00-\u9fff]")
+TIER_KEY = re.compile(r"^(\d+(?:\.\d+)?)%$")
 
 GLOSSARY_PATH = ROOT / "glossary.json"
 CACHE_PATH = ROOT / "translation_cache.json"
@@ -93,15 +94,22 @@ def translate_name(zh, glossary, cache):
     return ko
 
 
+def parse_tiers(raw):
+    """'10%' 형식의 키만 골라 [{'pct','rank'}] 로 만든다. 다른 형식은 건너뛴다."""
+    tiers = []
+    if not isinstance(raw, dict):
+        return tiers
+    for key, value in raw.items():
+        match = TIER_KEY.match(str(key))
+        if not match or not isinstance(value, (int, float)):
+            continue
+        pct = float(match.group(1))
+        tiers.append({"pct": int(pct) if pct.is_integer() else pct, "rank": int(value)})
+    return sorted(tiers, key=lambda t: t["pct"])
+
+
 def build_event(row, glossary, cache):
     zh = (row.get("event_name") or "").strip()
-    tiers = sorted(
-        (
-            {"pct": int(k.rstrip("%")), "rank": v}
-            for k, v in (row.get("tier_ranks") or {}).items()
-        ),
-        key=lambda t: t["pct"],
-    )
     return {
         "id": row["id"],
         "name_ko": translate_name(zh, glossary, cache),
@@ -110,7 +118,7 @@ def build_event(row, glossary, cache):
         "total": row.get("total_participants"),
         "created_at": row.get("created_at"),
         "updated_at": row.get("updated_at"),
-        "tiers": tiers,
+        "tiers": parse_tiers(row.get("tier_ranks")),
     }
 
 
