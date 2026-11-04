@@ -152,11 +152,10 @@ function renderEvent(ev) {
                     ev.status === "active" ? "진행 중" : "종료"));
   head.append(row);
 
-  if (ev.name_zh && ev.name_zh !== ev.name_ko) {
-    const zh = el("p", "zh", ev.name_zh);
-    zh.title = ev.name_zh;
-    head.append(zh);
-  }
+  const hasZh = ev.name_zh && ev.name_zh !== ev.name_ko;
+  const zh = el("p", "zh", hasZh ? ev.name_zh : "\u00a0");
+  if (hasZh) zh.title = ev.name_zh;
+  head.append(zh);
 
   const meta = el("p", "meta");
   const people = el("span", "", "참가자 ");
