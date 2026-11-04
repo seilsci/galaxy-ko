@@ -52,7 +52,6 @@
   .grid { display: grid; gap: .8rem; grid-template-columns: repeat(4, minmax(0, 1fr)); padding: .7rem 0 1rem; }
   @media (max-width: 1100px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
   @media (max-width: 820px)  { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 540px)  { .grid { grid-template-columns: minmax(0, 1fr); } }
 
   .event { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
   .event-head { padding: .7rem .85rem .55rem; border-bottom: 1px solid var(--line); }
@@ -77,6 +76,25 @@
   .empty { padding: 2rem 1rem; text-align: center; color: var(--muted); }
   footer { border-top: 1px solid var(--line); padding: .9rem 0; color: var(--muted); font-size: .82rem; text-align: center; }
   footer a { color: inherit; }
+
+  /* 모바일: 2열 + 카드 압축 */
+  @media (max-width: 540px) {
+    .wrap { padding: 0 .5rem; }
+    .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; padding-top: .5rem; }
+    .event-head { padding: .5rem .55rem .4rem; }
+    .title-row h2 { font-size: .85rem; }
+    .badge { display: none; }
+    .zh { font-size: .68rem; }
+    .meta { font-size: .7rem; margin-top: .15rem; }
+    .meta strong { font-size: .95rem; }
+    .meta span:last-child { display: none; }
+    .ladder { padding: .3rem .55rem .45rem; }
+    .ladder li { grid-template-columns: 3.3rem 1fr 3.7rem; gap: .3rem; padding: .08rem 0; }
+    .pct { font-size: .68rem; }
+    .bar { height: 6px; }
+    .rank { font-size: 1rem; }
+    .rank small { font-size: .65rem; }
+  }
 </style>
 </head>
 <body>
