@@ -905,7 +905,7 @@
   },
   {
    "id": 255,
-   "name_ko": "스피드 버스트 Ⅰ",
+   "name_ko": "급가속Ⅰ",
    "name_zh": "速度爆发Ⅰ",
    "status": "finished",
    "total": 173715,
@@ -936,7 +936,7 @@
   },
   {
    "id": 254,
-   "name_ko": "스피드 버스트 Ⅱ",
+   "name_ko": "급가속Ⅱ",
    "name_zh": "速度爆发Ⅱ",
    "status": "finished",
    "total": 180146,
@@ -967,7 +967,7 @@
   },
   {
    "id": 253,
-   "name_ko": "스피드 버스트 Ⅲ",
+   "name_ko": "급가속Ⅲ",
    "name_zh": "速度爆发Ⅲ",
    "status": "finished",
    "total": 196798,
