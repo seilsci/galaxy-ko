@@ -554,7 +554,7 @@
    "name_ko": "Switch 7주년",
    "name_zh": "Switch七周年",
    "status": "finished",
-   "total": null,
+   "total": 39756,
    "created_at": "2026-10-07T12:23:31.319+00:00",
    "updated_at": "2026-10-21T12:32:39.404069+00:00",
    "tiers": [
@@ -1479,7 +1479,7 @@
    "name_ko": "HTT 특별 이벤트",
    "name_zh": "HTT 特赛",
    "status": "finished",
-   "total": null,
+   "total": 11696,
    "created_at": "2026-09-11T13:08:08.813+00:00",
    "updated_at": "2026-09-15T10:14:44.205293+00:00",
    "tiers": [
@@ -1510,7 +1510,7 @@
    "name_ko": "Pac-Man Spotlight",
    "name_zh": "吃豆人聚光灯",
    "status": "finished",
-   "total": null,
+   "total": 54600,
    "created_at": "2026-08-27T14:51:27.546+00:00",
    "updated_at": "2026-09-15T10:14:41.23238+00:00",
    "tiers": [
@@ -1545,7 +1545,7 @@
    "name_ko": "LEGO Bugatti PS",
    "name_zh": "LEGO Bugatti PS",
    "status": "finished",
-   "total": null,
+   "total": 25372,
    "created_at": "2026-08-28T19:42:23.085+00:00",
    "updated_at": "2026-09-15T10:14:23.070125+00:00",
    "tiers": [
@@ -1580,7 +1580,7 @@
    "name_ko": "AF10 자동차 사냥 본편",
    "name_zh": "AF10暴乱",
    "status": "finished",
-   "total": null,
+   "total": 28908,
    "created_at": "2026-09-10T20:10:30.023+00:00",
    "updated_at": "2026-09-14T13:07:49.509707+00:00",
    "tiers": [
@@ -1615,7 +1615,7 @@
    "name_ko": "Labour Day",
    "name_zh": "Labour Day",
    "status": "finished",
-   "total": null,
+   "total": 188328,
    "created_at": "2026-09-07T17:55:03.385+00:00",
    "updated_at": "2026-09-13T14:02:03.954417+00:00",
    "tiers": [
@@ -1646,7 +1646,7 @@
    "name_ko": "여름의 끝",
    "name_zh": "暑假尾声",
    "status": "finished",
-   "total": null,
+   "total": 238144,
    "created_at": "2026-09-04T11:54:52.156+00:00",
    "updated_at": "2026-09-12T17:26:18.127598+00:00",
    "tiers": [
@@ -1681,7 +1681,7 @@
    "name_ko": "CCXR TLE",
    "name_zh": "CCXR限时赛事",
    "status": "finished",
-   "total": null,
+   "total": 190565,
    "created_at": "2026-08-31T10:31:15.383+00:00",
    "updated_at": "2026-09-04T11:48:38.63318+00:00",
    "tiers": [
@@ -1716,7 +1716,7 @@
    "name_ko": "Legend Pass Showcase",
    "name_zh": "通行证展览",
    "status": "finished",
-   "total": null,
+   "total": 325622,
    "created_at": "2026-08-18T14:23:43.419+00:00",
    "updated_at": "2026-09-02T10:43:41.324603+00:00",
    "tiers": [
@@ -1747,7 +1747,7 @@
    "name_ko": "Silver Lighting 특별 이벤트",
    "name_zh": "银电特赛",
    "status": "finished",
-   "total": null,
+   "total": 16960,
    "created_at": "2026-08-28T19:43:16.939+00:00",
    "updated_at": "2026-09-02T09:42:36.509231+00:00",
    "tiers": [
@@ -1782,7 +1782,7 @@
    "name_ko": "Zenvo Showtime",
    "name_zh": "Zenvo Showtime",
    "status": "finished",
-   "total": null,
+   "total": 431273,
    "created_at": "2026-08-20T12:01:12.497+00:00",
    "updated_at": "2026-08-31T10:21:45.526819+00:00",
    "tiers": [
@@ -1817,7 +1817,7 @@
    "name_ko": "Porsche 911 4S 자동차 사냥 본편",
    "name_zh": "保时捷911 4S 暴乱",
    "status": "finished",
-   "total": null,
+   "total": 74182,
    "created_at": "2026-08-26T12:27:30.193+00:00",
    "updated_at": "2026-08-31T09:09:47.94909+00:00",
    "tiers": [
@@ -1852,7 +1852,7 @@
    "name_ko": "FV GT3",
    "name_zh": "FV GT3",
    "status": "finished",
-   "total": null,
+   "total": 157958,
    "created_at": "2026-08-22T14:50:59.911+00:00",
    "updated_at": "2026-08-26T11:53:40.295328+00:00",
    "tiers": [
@@ -1887,7 +1887,7 @@
    "name_ko": "칠석",
    "name_zh": "七夕节",
    "status": "finished",
-   "total": null,
+   "total": 170125,
    "created_at": "2026-08-19T15:06:31.64+00:00",
    "updated_at": "2026-08-23T12:47:24.645397+00:00",
    "tiers": [
@@ -1918,7 +1918,7 @@
    "name_ko": "Kepler 자동차 사냥 본편",
    "name_zh": "Kepler 暴乱",
    "status": "finished",
-   "total": null,
+   "total": 31370,
    "created_at": "2026-08-18T14:47:26.658+00:00",
    "updated_at": "2026-08-23T11:34:06.012217+00:00",
    "tiers": [
@@ -1953,7 +1953,7 @@
    "name_ko": "Formula Gen3",
    "name_zh": "Formula Gen3",
    "status": "finished",
-   "total": null,
+   "total": 298077,
    "created_at": "2026-08-13T12:53:22.454+00:00",
    "updated_at": "2026-08-21T12:12:21.044672+00:00",
    "tiers": [
@@ -1984,7 +1984,7 @@
    "name_ko": "Fenyr TLE",
    "name_zh": "狼王限时赛事",
    "status": "finished",
-   "total": null,
+   "total": 196587,
    "created_at": "2026-08-15T21:27:37.172+00:00",
    "updated_at": "2026-08-19T14:21:01.717987+00:00",
    "tiers": [
@@ -2019,7 +2019,7 @@
    "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
-   "total": null,
+   "total": 435871,
    "created_at": "2026-07-21T18:52:43.037+00:00",
    "updated_at": "2026-08-18T14:18:55.091817+00:00",
    "tiers": [
@@ -2058,7 +2058,7 @@
    "name_ko": "JDM Spotlight",
    "name_zh": "JDM 聚光灯",
    "status": "finished",
-   "total": null,
+   "total": 35464,
    "created_at": "2026-07-31T17:54:02.765+00:00",
    "updated_at": "2026-08-18T09:49:46.224766+00:00",
    "tiers": [
@@ -2093,7 +2093,7 @@
    "name_ko": "TS900 특별 이벤트",
    "name_zh": "TS900 特赛",
    "status": "finished",
-   "total": null,
+   "total": 9496,
    "created_at": "2026-08-15T09:16:14.993+00:00",
    "updated_at": "2026-08-18T09:01:40.828442+00:00",
    "tiers": [
@@ -2128,7 +2128,7 @@
    "name_ko": "ZondaHP 자동차 사냥 본편",
    "name_zh": "ZondaHP暴乱",
    "status": "finished",
-   "total": null,
+   "total": 17293,
    "created_at": "2026-08-13T07:18:22.128+00:00",
    "updated_at": "2026-08-17T14:29:45.321913+00:00",
    "tiers": [
@@ -2163,7 +2163,7 @@
    "name_ko": "Bentley GT3",
    "name_zh": "宾利 GT3",
    "status": "finished",
-   "total": null,
+   "total": 185655,
    "created_at": "2026-08-10T17:01:32.195+00:00",
    "updated_at": "2026-08-15T20:42:00.161509+00:00",
    "tiers": [
@@ -2198,7 +2198,7 @@
    "name_ko": "썸머 스포츠",
    "name_zh": "夏季运动",
    "status": "finished",
-   "total": null,
+   "total": 192680,
    "created_at": "2026-08-05T13:25:18.251+00:00",
    "updated_at": "2026-08-10T16:52:14.040101+00:00",
    "tiers": [
@@ -2229,7 +2229,7 @@
    "name_ko": "Legend Pass Showcase",
    "name_zh": "通行证展览",
    "status": "finished",
-   "total": null,
+   "total": 393621,
    "created_at": "2026-07-21T18:39:01.499+00:00",
    "updated_at": "2026-08-05T13:23:40.301108+00:00",
    "tiers": [
@@ -2260,7 +2260,7 @@
    "name_ko": "프렌즈 유나이트",
    "name_zh": "好友集结",
    "status": "finished",
-   "total": null,
+   "total": 173852,
    "created_at": "2026-07-30T14:22:02.22+00:00",
    "updated_at": "2026-08-05T13:17:48.202871+00:00",
    "tiers": [
@@ -2295,7 +2295,7 @@
    "name_ko": "Lexus LFA 자동차 사냥 본편",
    "name_zh": "Lexus LFA 暴乱",
    "status": "finished",
-   "total": null,
+   "total": 17098,
    "created_at": "2026-07-29T16:26:12.786+00:00",
    "updated_at": "2026-08-03T09:36:59.930796+00:00",
    "tiers": [
@@ -2330,7 +2330,7 @@
    "name_ko": "F40 자동차 사냥 본편",
    "name_zh": "F40 暴乱",
    "status": "finished",
-   "total": null,
+   "total": 52625,
    "created_at": "2026-07-29T16:11:15.52+00:00",
    "updated_at": "2026-08-03T09:36:32.088366+00:00",
    "tiers": [
@@ -2365,7 +2365,7 @@
    "name_ko": "뷰티풀 게임",
    "name_zh": "美好游戏",
    "status": "finished",
-   "total": null,
+   "total": 153564,
    "created_at": "2026-07-28T15:02:25.892+00:00",
    "updated_at": "2026-08-02T11:47:09.773496+00:00",
    "tiers": [
@@ -2396,7 +2396,7 @@
    "name_ko": "Asphalt 생일",
    "name_zh": "狂野飙车生日",
    "status": "finished",
-   "total": null,
+   "total": 171151,
    "created_at": "2026-07-26T12:58:05.219+00:00",
    "updated_at": "2026-07-30T14:13:59.399619+00:00",
    "tiers": [
@@ -2431,7 +2431,7 @@
    "name_ko": "Ginetta Akula SE",
    "name_zh": "Ginetta Akula SE",
    "status": "finished",
-   "total": null,
+   "total": 22399,
    "created_at": "2026-07-23T15:04:18.338+00:00",
    "updated_at": "2026-07-29T09:31:01.067691+00:00",
    "tiers": [
@@ -2466,7 +2466,7 @@
    "name_ko": "Mistral 특별 이벤트",
    "name_zh": "Mistral特赛",
    "status": "finished",
-   "total": null,
+   "total": 22767,
    "created_at": "2026-07-17T17:07:40.185+00:00",
    "updated_at": "2026-07-23T15:02:57.470447+00:00",
    "tiers": [
@@ -2501,7 +2501,7 @@
    "name_ko": "세계 이모티콘의 날",
    "name_zh": "世界表情包日",
    "status": "finished",
-   "total": null,
+   "total": 169941,
    "created_at": "2026-07-17T15:58:28.911+00:00",
    "updated_at": "2026-07-21T18:53:35.441736+00:00",
    "tiers": [
@@ -2536,7 +2536,7 @@
    "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
-   "total": null,
+   "total": 532865,
    "created_at": "2026-06-23T19:11:53.429+00:00",
    "updated_at": "2026-07-21T18:52:02.893109+00:00",
    "tiers": [
@@ -2575,7 +2575,7 @@
    "name_ko": "Aero TT SE",
    "name_zh": "索尼克35周年",
    "status": "finished",
-   "total": null,
+   "total": 86923,
    "created_at": "2026-06-20T17:01:25.952+00:00",
    "updated_at": "2026-07-21T14:01:45.767442+00:00",
    "tiers": [
@@ -2610,7 +2610,7 @@
    "name_ko": "Project 8 자동차 사냥 본편",
    "name_zh": "Project 8暴乱",
    "status": "finished",
-   "total": null,
+   "total": 29323,
    "created_at": "2026-07-19T03:16:32.642+00:00",
    "updated_at": "2026-07-19T18:10:47.87669+00:00",
    "tiers": [
@@ -2645,7 +2645,7 @@
    "name_ko": "럭키 넘버 7",
    "name_zh": "幸运数字7",
    "status": "finished",
-   "total": null,
+   "total": 173349,
    "created_at": "2026-07-13T14:24:14.867+00:00",
    "updated_at": "2026-07-17T15:51:09.009979+00:00",
    "tiers": [
@@ -2684,7 +2684,7 @@
    "name_ko": "Z GT4 특별 이벤트",
    "name_zh": "Z GT4特赛",
    "status": "finished",
-   "total": null,
+   "total": 24723,
    "created_at": "2026-07-05T20:32:42.84+00:00",
    "updated_at": "2026-07-11T09:10:38.584771+00:00",
    "tiers": [
@@ -2719,7 +2719,7 @@
    "name_ko": "Legend Pass Showcase",
    "name_zh": "通行证展览",
    "status": "finished",
-   "total": null,
+   "total": 384483,
    "created_at": "2026-06-23T19:06:22.709+00:00",
    "updated_at": "2026-07-08T19:28:39.475797+00:00",
    "tiers": [
@@ -2750,7 +2750,7 @@
    "name_ko": "Racing Across France",
    "name_zh": "狂飙法国",
    "status": "finished",
-   "total": null,
+   "total": 164382,
    "created_at": "2026-07-02T12:42:48.092+00:00",
    "updated_at": "2026-07-07T10:12:59.285234+00:00",
    "tiers": [
@@ -2785,7 +2785,7 @@
    "name_ko": "MissR 자동차 사냥 본편",
    "name_zh": "MissR暴乱",
    "status": "finished",
-   "total": null,
+   "total": 47036,
    "created_at": "2026-07-01T18:47:42.677+00:00",
    "updated_at": "2026-07-05T09:56:12.411108+00:00",
    "tiers": [
@@ -2820,7 +2820,7 @@
    "name_ko": "썸머 솔스티스 이벤트",
    "name_zh": "夏至",
    "status": "finished",
-   "total": null,
+   "total": 210315,
    "created_at": "2026-06-22T18:00:25.604+00:00",
    "updated_at": "2026-07-03T13:27:14.737678+00:00",
    "tiers": [
@@ -2855,7 +2855,7 @@
    "name_ko": "AUDI R8 2000",
    "name_zh": "AUDI R8 2000",
    "status": "finished",
-   "total": null,
+   "total": 22010,
    "created_at": "2026-06-21T18:31:12.159+00:00",
    "updated_at": "2026-07-02T09:12:05.877407+00:00",
    "tiers": [
@@ -2890,7 +2890,7 @@
    "name_ko": "드래곤 보트 축제",
    "name_zh": "端午节",
    "status": "finished",
-   "total": null,
+   "total": 292706,
    "created_at": "2026-06-19T18:19:40.819+00:00",
    "updated_at": "2026-06-26T16:37:19.525307+00:00",
    "tiers": [
@@ -2921,7 +2921,7 @@
    "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
-   "total": null,
+   "total": 507203,
    "created_at": "2026-05-28T19:33:08.982+00:00",
    "updated_at": "2026-06-23T18:59:19.353299+00:00",
    "tiers": [
@@ -2960,7 +2960,7 @@
    "name_ko": "Audi R18 Spotlight",
    "name_zh": "Audi R18 聚光灯",
    "status": "finished",
-   "total": null,
+   "total": 50607,
    "created_at": "2026-06-03T09:12:46.73+00:00",
    "updated_at": "2026-06-23T09:02:01.373225+00:00",
    "tiers": [
@@ -2995,7 +2995,7 @@
    "name_ko": "GTE 자동차 사냥 본편",
    "name_zh": "GTE 暴乱",
    "status": "finished",
-   "total": null,
+   "total": 52957,
    "created_at": "2026-06-17T18:16:04.455+00:00",
    "updated_at": "2026-06-22T09:52:09.187286+00:00",
    "tiers": [
@@ -3030,7 +3030,7 @@
    "name_ko": "인듀런스 쇼다운",
    "name_zh": "耐力对决",
    "status": "finished",
-   "total": null,
+   "total": 216680,
    "created_at": "2026-06-12T14:46:22.198+00:00",
    "updated_at": "2026-06-19T18:06:08.854831+00:00",
    "tiers": [
@@ -3065,7 +3065,7 @@
    "name_ko": "해안 크루징",
    "name_zh": "海岸兜风",
    "status": "finished",
-   "total": null,
+   "total": 160462,
    "created_at": "2026-06-09T16:26:15.122+00:00",
    "updated_at": "2026-06-12T14:02:09.639533+00:00",
    "tiers": [
@@ -3100,7 +3100,7 @@
    "name_ko": "Running Green",
    "name_zh": "绿野狂飙",
    "status": "finished",
-   "total": null,
+   "total": 282553,
    "created_at": "2026-06-05T10:02:31.693+00:00",
    "updated_at": "2026-06-11T17:09:22.249726+00:00",
    "tiers": [
@@ -3135,7 +3135,7 @@
    "name_ko": "Legend Pass Showcase",
    "name_zh": "通行证展览",
    "status": "finished",
-   "total": null,
+   "total": 439038,
    "created_at": "2026-05-28T19:27:01.88+00:00",
    "updated_at": "2026-06-10T15:50:02.759208+00:00",
    "tiers": [
@@ -3166,7 +3166,7 @@
    "name_ko": "Toyota2023 자동차 사냥 본편",
    "name_zh": "Toyota2023暴乱",
    "status": "finished",
-   "total": null,
+   "total": 31860,
    "created_at": "2026-06-04T18:33:06.497+00:00",
    "updated_at": "2026-06-09T10:05:05.692874+00:00",
    "tiers": [
@@ -3201,7 +3201,7 @@
    "name_ko": "W12 TLE",
    "name_zh": "W12限时赛事",
    "status": "finished",
-   "total": null,
+   "total": 150893,
    "created_at": "2026-05-29T10:20:06.031+00:00",
    "updated_at": "2026-06-04T15:38:40.222592+00:00",
    "tiers": [
@@ -3236,7 +3236,7 @@
    "name_ko": "Aglaia 특별 이벤트",
    "name_zh": "Aglaia特赛",
    "status": "finished",
-   "total": null,
+   "total": 23864,
    "created_at": "2026-05-28T19:22:12.513+00:00",
    "updated_at": "2026-06-03T09:12:42.294588+00:00",
    "tiers": [
@@ -3271,7 +3271,7 @@
    "name_ko": "阵亡将士纪念日",
    "name_zh": "阵亡将士纪念日",
    "status": "finished",
-   "total": null,
+   "total": 229090,
    "created_at": "2026-05-25T18:27:47.908+00:00",
    "updated_at": "2026-06-01T10:17:35.069901+00:00",
    "tiers": [
@@ -3306,7 +3306,7 @@
    "name_ko": "乐高女武神",
    "name_zh": "乐高女武神",
    "status": "finished",
-   "total": null,
+   "total": 146366,
    "created_at": "2026-05-14T15:07:15.505+00:00",
    "updated_at": "2026-05-28T09:39:17.070969+00:00",
    "tiers": [
@@ -3337,7 +3337,7 @@
    "name_ko": "黑豹 특별 이벤트",
    "name_zh": "黑豹骚乱特赛",
    "status": "finished",
-   "total": null,
+   "total": 26752,
    "created_at": "2026-05-13T16:17:54.702+00:00",
    "updated_at": "2026-05-28T09:32:15.689682+00:00",
    "tiers": [
@@ -3372,7 +3372,7 @@
    "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
-   "total": null,
+   "total": 566505,
    "created_at": "2026-04-28T19:30:48.55+00:00",
    "updated_at": "2026-05-27T15:43:26.169084+00:00",
    "tiers": [
@@ -3411,7 +3411,7 @@
    "name_ko": "世界蜜蜂日",
    "name_zh": "世界蜜蜂日",
    "status": "finished",
-   "total": null,
+   "total": 243372,
    "created_at": "2026-05-19T14:42:00.361+00:00",
    "updated_at": "2026-05-27T09:33:17.848469+00:00",
    "tiers": [
@@ -3446,7 +3446,7 @@
    "name_ko": "野马 Spotlight",
    "name_zh": "野马聚光灯",
    "status": "finished",
-   "total": null,
+   "total": 75822,
    "created_at": "2026-04-29T20:44:08.518+00:00",
    "updated_at": "2026-05-27T09:33:09.399507+00:00",
    "tiers": [
@@ -3481,7 +3481,7 @@
    "name_ko": "Valour 자동차 사냥 본편",
    "name_zh": "Valour暴乱",
    "status": "finished",
-   "total": null,
+   "total": 38061,
    "created_at": "2026-05-20T16:23:00.685+00:00",
    "updated_at": "2026-05-25T13:40:54.201447+00:00",
    "tiers": [
@@ -3516,7 +3516,7 @@
    "name_ko": "国际家庭日",
    "name_zh": "国际家庭日",
    "status": "finished",
-   "total": null,
+   "total": 228650,
    "created_at": "2026-05-13T14:16:43.109+00:00",
    "updated_at": "2026-05-20T16:17:04.542412+00:00",
    "tiers": [
@@ -3551,7 +3551,7 @@
    "name_ko": "919 특별 이벤트",
    "name_zh": "919特赛",
    "status": "finished",
-   "total": null,
+   "total": 3178,
    "created_at": "2026-05-05T15:40:14.317+00:00",
    "updated_at": "2026-05-18T09:04:58.511174+00:00",
    "tiers": [
@@ -3586,7 +3586,7 @@
    "name_ko": "Legend Pass Showcase",
    "name_zh": "通行证精选",
    "status": "finished",
-   "total": null,
+   "total": 440835,
    "created_at": "2026-04-28T19:24:37.648+00:00",
    "updated_at": "2026-05-13T14:04:23.689751+00:00",
    "tiers": [
@@ -3617,7 +3617,7 @@
    "name_ko": "CX75 자동차 사냥 본편",
    "name_zh": "CX75暴乱",
    "status": "finished",
-   "total": null,
+   "total": 40154,
    "created_at": "2026-05-06T18:17:24.79+00:00",
    "updated_at": "2026-05-11T11:21:20.954822+00:00",
    "tiers": [
@@ -3652,7 +3652,7 @@
    "name_ko": "黄金周2026",
    "name_zh": "黄金周2026",
    "status": "finished",
-   "total": null,
+   "total": 239617,
    "created_at": "2026-04-27T15:19:04.648+00:00",
    "updated_at": "2026-05-05T14:22:29.780581+00:00",
    "tiers": [
@@ -3687,7 +3687,7 @@
    "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
-   "total": null,
+   "total": 470877,
    "created_at": "2026-03-31T18:52:26.565+00:00",
    "updated_at": "2026-04-28T19:14:56.525067+00:00",
    "tiers": [
@@ -3726,7 +3726,7 @@
    "name_ko": "918 Asphalt Edition",
    "name_zh": "918 Asphalt Edition",
    "status": "finished",
-   "total": null,
+   "total": 117030,
    "created_at": "2026-04-06T14:45:52.633+00:00",
    "updated_at": "2026-04-28T09:32:02.061341+00:00",
    "tiers": [
@@ -3761,7 +3761,7 @@
    "name_ko": "296GBT(试驾)",
    "name_zh": "296GBT(试驾)",
    "status": "finished",
-   "total": null,
+   "total": 48622,
    "created_at": "2026-04-22T15:35:19.65+00:00",
    "updated_at": "2026-04-28T09:31:58.762706+00:00",
    "tiers": [
@@ -3796,7 +3796,7 @@
    "name_ko": "EB110 자동차 사냥 본편",
    "name_zh": "EB110暴乱",
    "status": "finished",
-   "total": null,
+   "total": 21518,
    "created_at": "2026-04-22T18:02:58.604+00:00",
    "updated_at": "2026-04-26T09:32:42.718545+00:00",
    "tiers": [
@@ -3831,7 +3831,7 @@
    "name_ko": "GL周年庆",
    "name_zh": "GL周年庆",
    "status": "finished",
-   "total": null,
+   "total": 277103,
    "created_at": "2026-04-16T14:39:32.847+00:00",
    "updated_at": "2026-04-25T07:31:12.540608+00:00",
    "tiers": [
@@ -3866,7 +3866,7 @@
    "name_ko": "Legend Pass Showcase",
    "name_zh": "通行证展览",
    "status": "finished",
-   "total": null,
+   "total": 476100,
    "created_at": "2026-03-31T19:02:55.761+00:00",
    "updated_at": "2026-04-16T14:37:36.409647+00:00",
    "tiers": [
@@ -3897,7 +3897,7 @@
    "name_ko": "911 50 years 자동차 사냥 본편",
    "name_zh": "911 50 years 暴乱",
    "status": "finished",
-   "total": null,
+   "total": 24680,
    "created_at": "2026-04-08T13:24:17.171+00:00",
    "updated_at": "2026-04-12T13:31:57.051616+00:00",
    "tiers": [
@@ -3932,7 +3932,7 @@
    "name_ko": "莲花Emeya 자동차 사냥 본편",
    "name_zh": "莲花Emeya暴乱",
    "status": "finished",
-   "total": null,
+   "total": 13625,
    "created_at": "2026-04-08T20:59:27.261+00:00",
    "updated_at": "2026-04-12T13:28:25.648859+00:00",
    "tiers": [
@@ -3967,7 +3967,7 @@
    "name_ko": "499P 특별 이벤트",
    "name_zh": "499P特赛",
    "status": "finished",
-   "total": null,
+   "total": 39163,
    "created_at": "2026-04-01T17:42:08.296+00:00",
    "updated_at": "2026-04-07T09:10:04.482576+00:00",
    "tiers": [
@@ -4002,7 +4002,7 @@
    "name_ko": "Jesko TLE",
    "name_zh": "Jesko赛事",
    "status": "finished",
-   "total": null,
+   "total": 154033,
    "created_at": "2026-03-28T12:05:46.129+00:00",
    "updated_at": "2026-03-31T18:45:17.585484+00:00",
    "tiers": [
@@ -4037,7 +4037,7 @@
    "name_ko": "春季浪潮",
    "name_zh": "春季浪潮",
    "status": "finished",
-   "total": null,
+   "total": 250132,
    "created_at": "2026-03-23T15:04:36.933+00:00",
    "updated_at": "2026-03-31T18:44:48.866698+00:00",
    "tiers": [
@@ -4072,7 +4072,7 @@
    "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
-   "total": null,
+   "total": 400983,
    "created_at": "2026-03-03T16:35:40.365+00:00",
    "updated_at": "2026-03-31T18:44:24.500729+00:00",
    "tiers": [
@@ -4111,7 +4111,7 @@
    "name_ko": "乌托邦 Spotlight(Switch)",
    "name_zh": "乌托邦聚光灯(Switch)",
    "status": "finished",
-   "total": null,
+   "total": 1243,
    "created_at": "2026-03-10T16:23:51.981+00:00",
    "updated_at": "2026-03-31T14:03:55.321334+00:00",
    "tiers": [
@@ -4146,7 +4146,7 @@
    "name_ko": "乌托邦 Spotlight",
    "name_zh": "乌托邦聚光灯",
    "status": "finished",
-   "total": null,
+   "total": 12426,
    "created_at": "2026-03-17T08:34:31.719+00:00",
    "updated_at": "2026-03-31T14:03:33.992023+00:00",
    "tiers": [
@@ -4181,7 +4181,7 @@
    "name_ko": "Vulcano Spyder 특별 이벤트",
    "name_zh": "Vulcano Spyder特赛",
    "status": "finished",
-   "total": null,
+   "total": 13739,
    "created_at": "2026-03-26T16:34:40.116+00:00",
    "updated_at": "2026-03-31T14:03:06.041367+00:00",
    "tiers": [
@@ -4216,7 +4216,7 @@
    "name_ko": "ENZO 자동차 사냥 본편",
    "name_zh": "ENZO暴乱",
    "status": "finished",
-   "total": null,
+   "total": 48412,
    "created_at": "2026-03-25T11:54:28.651+00:00",
    "updated_at": "2026-03-30T12:52:48.44199+00:00",
    "tiers": [
@@ -4251,7 +4251,7 @@
    "name_ko": "乐高全家桶",
    "name_zh": "乐高全家桶",
    "status": "finished",
-   "total": null,
+   "total": 43123,
    "created_at": "2026-03-18T13:41:31.537+00:00",
    "updated_at": "2026-03-30T12:52:06.608415+00:00",
    "tiers": [
@@ -4286,7 +4286,7 @@
    "name_ko": "Formula E Race",
    "name_zh": "Formula E Race",
    "status": "finished",
-   "total": null,
+   "total": 247421,
    "created_at": "2026-03-19T13:24:52.961+00:00",
    "updated_at": "2026-03-25T12:51:34.600854+00:00",
    "tiers": [
@@ -4321,7 +4321,7 @@
    "name_ko": "疯狂三月篮球赛",
    "name_zh": "疯狂三月篮球赛",
    "status": "finished",
-   "total": null,
+   "total": 202551,
    "created_at": "2026-03-13T17:07:27.023+00:00",
    "updated_at": "2026-03-20T14:45:11.319675+00:00",
    "tiers": [
@@ -4356,7 +4356,7 @@
    "name_ko": "P72 특별 이벤트(试驾)",
    "name_zh": "P72特赛(试驾)",
    "status": "finished",
-   "total": null,
+   "total": 35005,
    "created_at": "2026-03-14T20:20:53.073+00:00",
    "updated_at": "2026-03-19T09:04:19.920872+00:00",
    "tiers": [
@@ -4391,7 +4391,7 @@
    "name_ko": "乐高宝马M4",
    "name_zh": "乐高宝马M4",
    "status": "finished",
-   "total": null,
+   "total": 176138,
    "created_at": "2026-03-05T18:49:41.721+00:00",
    "updated_at": "2026-03-18T13:30:56.921468+00:00",
    "tiers": [
@@ -4422,7 +4422,7 @@
    "name_ko": "Legend Pass Showcase",
    "name_zh": "通行证展览",
    "status": "finished",
-   "total": null,
+   "total": 359224,
    "created_at": "2026-03-03T16:26:59.513+00:00",
    "updated_at": "2026-03-17T15:26:28.408542+00:00",
    "tiers": [
@@ -4453,7 +4453,7 @@
    "name_ko": "1V10 자동차 사냥 본편",
    "name_zh": "1V10暴乱",
    "status": "finished",
-   "total": null,
+   "total": 60246,
    "created_at": "2026-03-11T10:06:49.664+00:00",
    "updated_at": "2026-03-15T12:06:35.201653+00:00",
    "tiers": [
@@ -4488,7 +4488,7 @@
    "name_ko": "妇女节",
    "name_zh": "妇女节",
    "status": "finished",
-   "total": null,
+   "total": 140933,
    "created_at": "2026-03-07T10:17:00.987+00:00",
    "updated_at": "2026-03-09T10:42:41.624851+00:00",
    "tiers": [
@@ -4523,7 +4523,7 @@
    "name_ko": "莲花ER9 특별 이벤트",
    "name_zh": "莲花ER9 特赛",
    "status": "finished",
-   "total": null,
+   "total": 5236,
    "created_at": "2026-03-04T08:15:07.44+00:00",
    "updated_at": "2026-03-06T13:56:21.267375+00:00",
    "tiers": [
@@ -4558,7 +4558,7 @@
    "name_ko": "OC Showcase[Switch]",
    "name_zh": "OC精选[Switch]",
    "status": "finished",
-   "total": null,
+   "total": 42139,
    "created_at": "2026-02-18T17:37:36.893+00:00",
    "updated_at": "2026-03-03T16:19:40.280036+00:00",
    "tiers": [
@@ -4597,7 +4597,7 @@
    "name_ko": "Legend Pass Showcase[Switch]",
    "name_zh": "通行证展览[Switch]",
    "status": "finished",
-   "total": null,
+   "total": 49220,
    "created_at": "2026-02-18T17:14:38.696+00:00",
    "updated_at": "2026-03-03T16:19:15.755738+00:00",
    "tiers": [
@@ -4632,7 +4632,7 @@
    "name_ko": "004 자동차 사냥 본편",
    "name_zh": "004 暴乱",
    "status": "finished",
-   "total": null,
+   "total": 40180,
    "created_at": "2026-02-26T16:48:17.546+00:00",
    "updated_at": "2026-03-01T18:52:15.539058+00:00",
    "tiers": [
@@ -4667,7 +4667,7 @@
    "name_ko": "乐高黄貂鱼[Switch]",
    "name_zh": "乐高黄貂鱼[Switch]",
    "status": "finished",
-   "total": null,
+   "total": 91171,
    "created_at": "2026-02-18T17:19:01.173+00:00",
    "updated_at": "2026-02-28T09:21:04.1565+00:00",
    "tiers": [
@@ -4702,7 +4702,7 @@
    "name_ko": "FV FRANGIVENTO",
    "name_zh": "FV FRANGIVENTO",
    "status": "finished",
-   "total": null,
+   "total": 181463,
    "created_at": "2026-02-24T20:41:42.645+00:00",
    "updated_at": "2026-02-28T09:20:54.053913+00:00",
    "tiers": [
@@ -4737,7 +4737,7 @@
    "name_ko": "斋月",
    "name_zh": "斋月",
    "status": "finished",
-   "total": null,
+   "total": 244677,
    "created_at": "2026-02-18T17:43:53.964+00:00",
    "updated_at": "2026-02-26T19:18:06.544879+00:00",
    "tiers": [
@@ -4772,7 +4772,7 @@
    "name_ko": "新月[Switch]",
    "name_zh": "新月[Switch]",
    "status": "finished",
-   "total": null,
+   "total": 20635,
    "created_at": "2026-02-18T17:30:33.841+00:00",
    "updated_at": "2026-02-22T16:35:02.660688+00:00",
    "tiers": [
@@ -4807,7 +4807,7 @@
    "name_ko": "S精英赛[Switch]",
    "name_zh": "S精英赛[Switch]",
    "status": "finished",
-   "total": null,
+   "total": 9413,
    "created_at": "2026-02-14T15:08:56.904+00:00",
    "updated_at": "2026-02-22T16:33:48.355539+00:00",
    "tiers": [
@@ -4854,7 +4854,7 @@
    "name_ko": "情人节2026[Switch]",
    "name_zh": "情人节2026[Switch]",
    "status": "finished",
-   "total": null,
+   "total": 41668,
    "created_at": "2026-02-14T15:13:16.833+00:00",
    "updated_at": "2026-02-18T17:03:39.488695+00:00",
    "tiers": [
@@ -4889,7 +4889,7 @@
    "name_ko": "每周竞赛[Switch]",
    "name_zh": "每周竞赛[Switch]",
    "status": "finished",
-   "total": null,
+   "total": 24212,
    "created_at": "2026-02-12T10:29:43.434+00:00",
    "updated_at": "2026-02-18T17:02:45.045203+00:00",
    "tiers": [
@@ -4928,7 +4928,7 @@
    "name_ko": "XJR-15 자동차 사냥 본편[Switch]",
    "name_zh": "XJR-15暴乱[Switch]",
    "status": "finished",
-   "total": null,
+   "total": 3448,
    "created_at": "2026-02-12T10:09:54.776+00:00",
    "updated_at": "2026-02-18T17:02:17.623118+00:00",
    "tiers": [
@@ -4963,7 +4963,7 @@
    "name_ko": "XJR-15 자동차 사냥 본편",
    "name_zh": "XJR-15暴乱",
    "status": "finished",
-   "total": null,
+   "total": 24410,
    "created_at": "2026-02-14T05:45:01.983+00:00",
    "updated_at": "2026-02-18T04:22:06.959681+00:00",
    "tiers": [
@@ -4998,7 +4998,7 @@
    "name_ko": "F12 Berlinetta 자동차 사냥 본편",
    "name_zh": "F12 Berlinetta 暴乱",
    "status": "finished",
-   "total": null,
+   "total": 16142,
    "created_at": "2026-02-11T10:30:03.55+00:00",
    "updated_at": "2026-02-18T04:21:55.854397+00:00",
    "tiers": [
@@ -5033,7 +5033,7 @@
    "name_ko": "Jesko Ab 특별 이벤트",
    "name_zh": "Jesko Ab特赛",
    "status": "finished",
-   "total": null,
+   "total": 4168,
    "created_at": "2026-02-01T05:32:29.876+00:00",
    "updated_at": "2026-02-05T11:01:24.303027+00:00",
    "tiers": [
@@ -5068,7 +5068,7 @@
    "name_ko": "土拨鼠之日",
    "name_zh": "土拨鼠之日",
    "status": "finished",
-   "total": null,
+   "total": 169887,
    "created_at": "2026-02-03T14:12:36.222+00:00",
    "updated_at": "2026-02-04T12:02:29.011602+00:00",
    "tiers": [
@@ -5103,7 +5103,7 @@
    "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
-   "total": null,
+   "total": 547746,
    "created_at": "2026-01-09T08:55:19.766+00:00",
    "updated_at": "2026-02-02T17:14:20.105487+00:00",
    "tiers": [
@@ -5142,7 +5142,7 @@
    "name_ko": "BMW M4GT3 자동차 사냥 본편",
    "name_zh": "BMW M4GT3暴乱",
    "status": "finished",
-   "total": null,
+   "total": 58913,
    "created_at": "2026-01-29T11:29:30.271+00:00",
    "updated_at": "2026-02-02T17:12:21.988993+00:00",
    "tiers": [
@@ -5177,7 +5177,7 @@
    "name_ko": "清洁能源之旅",
    "name_zh": "清洁能源之旅",
    "status": "finished",
-   "total": null,
+   "total": 278065,
    "created_at": "2026-01-21T17:26:36.316+00:00",
    "updated_at": "2026-01-29T09:06:20.031434+00:00",
    "tiers": [
@@ -5208,7 +5208,7 @@
    "name_ko": "LEGO 布加迪PS",
    "name_zh": "LEGO 布加迪PS",
    "status": "finished",
-   "total": null,
+   "total": 235100,
    "created_at": "2026-01-15T12:54:07.887+00:00",
    "updated_at": "2026-01-28T18:07:31.987326+00:00",
    "tiers": [
@@ -5239,7 +5239,7 @@
    "name_ko": "Aeon E 특별 이벤트",
    "name_zh": "Aeon E特赛",
    "status": "finished",
-   "total": null,
+   "total": 23003,
    "created_at": "2026-01-23T10:00:50.081+00:00",
    "updated_at": "2026-01-28T09:28:43.398942+00:00",
    "tiers": [
@@ -5274,7 +5274,7 @@
    "name_ko": "2025忧郁星期一",
    "name_zh": "2025忧郁星期一",
    "status": "finished",
-   "total": null,
+   "total": 239817,
    "created_at": "2026-01-19T09:55:06.652+00:00",
    "updated_at": "2026-01-25T14:32:08.937861+00:00",
    "tiers": [
@@ -5309,7 +5309,7 @@
    "name_ko": "Revuelto 특별 이벤트",
    "name_zh": "Revuelto 特赛",
    "status": "finished",
-   "total": null,
+   "total": 35400,
    "created_at": "2026-01-17T14:27:00.001+00:00",
    "updated_at": "2026-01-22T13:40:57.953774+00:00",
    "tiers": [
@@ -5344,7 +5344,7 @@
    "name_ko": "Legend Pass Showcase",
    "name_zh": "通行证展览",
    "status": "finished",
-   "total": null,
+   "total": 521212,
    "created_at": "2026-01-09T08:18:25.346+00:00",
    "updated_at": "2026-01-22T13:39:19.820976+00:00",
    "tiers": [
@@ -5375,7 +5375,7 @@
    "name_ko": "TVR SA 자동차 사냥 본편",
    "name_zh": "TVR SA 暴乱",
    "status": "finished",
-   "total": null,
+   "total": 26830,
    "created_at": "2026-01-16T17:52:11.989+00:00",
    "updated_at": "2026-01-20T09:23:48.653848+00:00",
    "tiers": [
@@ -5410,7 +5410,7 @@
    "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
-   "total": null,
+   "total": 635561,
    "created_at": "2025-12-11T14:02:00.51+00:00",
    "updated_at": "2026-01-09T07:08:23.841976+00:00",
    "tiers": [
@@ -5449,7 +5449,7 @@
    "name_ko": "300+ Spotlight",
    "name_zh": "300+聚光灯",
    "status": "finished",
-   "total": null,
+   "total": 102363,
    "created_at": "2025-12-28T19:22:33.888+00:00",
    "updated_at": "2026-01-08T12:30:39.816444+00:00",
    "tiers": [
@@ -5484,7 +5484,7 @@
    "name_ko": "2025疾驰而过",
    "name_zh": "2025疾驰而过",
    "status": "finished",
-   "total": null,
+   "total": 295840,
    "created_at": "2026-01-03T12:34:24.605+00:00",
    "updated_at": "2026-01-07T17:40:49.416148+00:00",
    "tiers": [
@@ -5519,7 +5519,7 @@
    "name_ko": "Porsche 涂装设计",
    "name_zh": "保时捷涂装设计",
    "status": "finished",
-   "total": null,
+   "total": 1006714,
    "created_at": "2025-12-23T15:51:46.308+00:00",
    "updated_at": "2026-01-06T20:13:33.906996+00:00",
    "tiers": [
@@ -5558,7 +5558,7 @@
    "name_ko": "Berlinetta 자동차 사냥 본편",
    "name_zh": "Berlinetta 暴乱",
    "status": "finished",
-   "total": null,
+   "total": 49351,
    "created_at": "2026-01-02T15:53:03.823+00:00",
    "updated_at": "2026-01-06T20:13:30.240112+00:00",
    "tiers": [
@@ -5593,7 +5593,7 @@
    "name_ko": "ZR1 EVO #2",
    "name_zh": "ZR1 EVO #2",
    "status": "finished",
-   "total": null,
+   "total": 21983,
    "created_at": "2025-12-25T16:09:53.445+00:00",
    "updated_at": "2025-12-31T16:10:54.577452+00:00",
    "tiers": [
@@ -5624,7 +5624,7 @@
    "name_ko": "Legend Pass Showcase",
    "name_zh": "通行证展览",
    "status": "finished",
-   "total": null,
+   "total": 486259,
    "created_at": "2025-12-11T13:56:12.872+00:00",
    "updated_at": "2025-12-25T15:46:05.207178+00:00",
    "tiers": [
@@ -5659,7 +5659,7 @@
    "name_ko": "Benz CKL 자동차 사냥 본편",
    "name_zh": "Benz CKL 暴乱",
    "status": "finished",
-   "total": null,
+   "total": 37928,
    "created_at": "2025-12-19T11:19:19.632+00:00",
    "updated_at": "2025-12-23T15:39:14.039133+00:00",
    "tiers": [
@@ -5694,7 +5694,7 @@
    "name_ko": "Toyota 2023 자동차 사냥 본편",
    "name_zh": "Toyota 2023暴乱",
    "status": "finished",
-   "total": null,
+   "total": 21210,
    "created_at": "2025-12-19T11:13:07.438+00:00",
    "updated_at": "2025-12-23T15:03:12.316237+00:00",
    "tiers": [
@@ -5729,7 +5729,7 @@
    "name_ko": "冬至2025",
    "name_zh": "冬至2025",
    "status": "finished",
-   "total": null,
+   "total": 183962,
    "created_at": "2025-12-19T15:43:03.817+00:00",
    "updated_at": "2025-12-22T16:23:18.715102+00:00",
    "tiers": [
@@ -5768,7 +5768,7 @@
    "name_ko": "ZR1 EVO",
    "name_zh": "ZR1 EVO",
    "status": "finished",
-   "total": null,
+   "total": 28298,
    "created_at": "2025-12-11T14:27:03.152+00:00",
    "updated_at": "2025-12-18T14:23:06.439022+00:00",
    "tiers": [
@@ -5799,7 +5799,7 @@
    "name_ko": "世界人权日",
    "name_zh": "世界人权日",
    "status": "finished",
-   "total": null,
+   "total": 178848,
    "created_at": "2025-12-10T16:12:03.708+00:00",
    "updated_at": "2025-12-14T10:00:49.020998+00:00",
    "tiers": [
@@ -5846,7 +5846,7 @@
    "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
-   "total": null,
+   "total": 510641,
    "created_at": "2025-11-15T17:49:54.415+00:00",
    "updated_at": "2025-12-11T10:12:03.067007+00:00",
    "tiers": [
@@ -5885,7 +5885,7 @@
    "name_ko": "One:1",
    "name_zh": "One:1",
    "status": "finished",
-   "total": null,
+   "total": 49931,
    "created_at": "2025-12-07T11:08:02.447+00:00",
    "updated_at": "2025-12-11T10:12:00.142214+00:00",
    "tiers": [
@@ -5920,7 +5920,7 @@
    "name_ko": "CC850 Spotlight",
    "name_zh": "CC850聚光灯",
    "status": "finished",
-   "total": null,
+   "total": 7183,
    "created_at": "2025-12-05T12:28:36.686+00:00",
    "updated_at": "2025-12-11T10:11:54.817469+00:00",
    "tiers": [
@@ -5955,7 +5955,7 @@
    "name_ko": "AF8寻车 자동차 사냥 본편",
    "name_zh": "AF8寻车暴乱",
    "status": "finished",
-   "total": null,
+   "total": 13165,
    "created_at": "2025-12-05T19:09:15.894+00:00",
    "updated_at": "2025-12-09T09:37:35.869592+00:00",
    "tiers": [
@@ -5990,7 +5990,7 @@
    "name_ko": "Chiron EVO",
    "name_zh": "Chiron EVO",
    "status": "finished",
-   "total": null,
+   "total": 18699,
    "created_at": "2025-12-02T12:19:29.928+00:00",
    "updated_at": "2025-12-09T09:37:15.769954+00:00",
    "tiers": [
@@ -6025,7 +6025,7 @@
    "name_ko": "Porsche 轮毂",
    "name_zh": "保时捷轮毂",
    "status": "finished",
-   "total": null,
+   "total": 615360,
    "created_at": "2025-11-27T12:26:44.395+00:00",
    "updated_at": "2025-12-08T12:14:13.036067+00:00",
    "tiers": [
@@ -6076,7 +6076,7 @@
    "name_ko": "速爆Ⅲ:黑龙&SSC",
    "name_zh": "速爆Ⅲ:黑龙&SSC",
    "status": "finished",
-   "total": null,
+   "total": 225366,
    "created_at": "2025-11-21T14:07:07.397+00:00",
    "updated_at": "2025-12-06T09:01:18.540173+00:00",
    "tiers": [
@@ -6107,7 +6107,7 @@
    "name_ko": "速爆Ⅰ:C2&RS",
    "name_zh": "速爆Ⅰ:C2&RS",
    "status": "finished",
-   "total": null,
+   "total": 266520,
    "created_at": "2025-11-21T14:03:31.587+00:00",
    "updated_at": "2025-12-06T09:00:59.542492+00:00",
    "tiers": [
@@ -6138,7 +6138,7 @@
    "name_ko": "速爆Ⅱ:Htt&21C",
    "name_zh": "速爆Ⅱ:Htt&21C",
    "status": "finished",
-   "total": null,
+   "total": 25324,
    "created_at": "2025-11-21T13:52:26.886+00:00",
    "updated_at": "2025-12-06T09:00:38.074447+00:00",
    "tiers": [
@@ -6169,7 +6169,7 @@
    "name_ko": "赛博星期一",
    "name_zh": "赛博星期一",
    "status": "finished",
-   "total": null,
+   "total": 146099,
    "created_at": "2025-12-01T15:59:16.733+00:00",
    "updated_at": "2025-12-03T13:54:08.898036+00:00",
    "tiers": [
@@ -6220,7 +6220,7 @@
    "name_ko": "Legend Pass Showcase",
    "name_zh": "通行证展览",
    "status": "finished",
-   "total": null,
+   "total": 462787,
    "created_at": "2025-11-15T17:41:01.614+00:00",
    "updated_at": "2025-11-27T12:12:00.526067+00:00",
    "tiers": [
@@ -6251,7 +6251,7 @@
    "name_ko": "宾尼法利纳B95",
    "name_zh": "宾尼法利纳B95",
    "status": "finished",
-   "total": null,
+   "total": 22332,
    "created_at": "2025-11-22T11:20:23.824+00:00",
    "updated_at": "2025-11-26T09:23:11.447366+00:00",
    "tiers": [
@@ -6286,7 +6286,7 @@
    "name_ko": "帕加尼BC 자동차 사냥 본편",
    "name_zh": "帕加尼BC暴乱",
    "status": "finished",
-   "total": null,
+   "total": 53722,
    "created_at": "2025-11-21T10:14:30.889+00:00",
    "updated_at": "2025-11-25T10:32:58.33095+00:00",
    "tiers": [
@@ -6321,7 +6321,7 @@
    "name_ko": "Zonda HP Barchetta",
    "name_zh": "Zonda HP Barchetta",
    "status": "finished",
-   "total": null,
+   "total": 207023,
    "created_at": "2025-11-17T11:48:03.72+00:00",
    "updated_at": "2025-11-22T11:22:53.922406+00:00",
    "tiers": [
@@ -6372,7 +6372,7 @@
    "name_ko": "Aglaia",
    "name_zh": "Aglaia",
    "status": "finished",
-   "total": null,
+   "total": 11113,
    "created_at": "2025-11-08T14:28:04.362+00:00",
    "updated_at": "2025-11-14T03:43:49.470792+00:00",
    "tiers": [
@@ -6407,7 +6407,7 @@
    "name_ko": "Ford 5-FD",
    "name_zh": "Ford 5-FD",
    "status": "finished",
-   "total": null,
+   "total": 80015,
    "created_at": "2025-10-20T11:08:25.476+00:00",
    "updated_at": "2025-11-14T03:43:47.290971+00:00",
    "tiers": [
@@ -6442,7 +6442,7 @@
    "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "finished",
-   "total": null,
+   "total": 422726,
    "created_at": "2025-10-20T10:18:15.55+00:00",
    "updated_at": "2025-11-14T03:43:45.220393+00:00",
    "tiers": [
@@ -6485,7 +6485,7 @@
    "name_ko": "恩佐 EVO",
    "name_zh": "恩佐 EVO",
    "status": "finished",
-   "total": null,
+   "total": 15893,
    "created_at": "2025-11-05T15:23:32.381+00:00",
    "updated_at": "2025-11-12T11:20:22.619122+00:00",
    "tiers": [
@@ -6520,7 +6520,7 @@
    "name_ko": "599XX 자동차 사냥 본편",
    "name_zh": "599XX暴乱",
    "status": "finished",
-   "total": null,
+   "total": 24331,
    "created_at": "2025-11-08T10:42:31.103+00:00",
    "updated_at": "2025-11-11T16:14:04.427823+00:00",
    "tiers": [
@@ -6555,7 +6555,7 @@
    "name_ko": "极光周末",
    "name_zh": "极光周末",
    "status": "finished",
-   "total": null,
+   "total": 141157,
    "created_at": "2025-11-07T11:42:11.8+00:00",
    "updated_at": "2025-11-09T18:29:32.860656+00:00",
    "tiers": [
@@ -6606,7 +6606,7 @@
    "name_ko": "핼러윈",
    "name_zh": "万圣节",
    "status": "finished",
-   "total": null,
+   "total": 251743,
    "created_at": "2025-10-27T10:35:56.948+00:00",
    "updated_at": "2025-11-05T16:04:21.516191+00:00",
    "tiers": [
@@ -6637,7 +6637,7 @@
    "name_ko": "法拉利电竞499P",
    "name_zh": "法拉利电竞499P",
    "status": "finished",
-   "total": null,
+   "total": 318076,
    "created_at": "2025-10-27T10:28:44.92+00:00",
    "updated_at": "2025-11-03T18:36:12.338347+00:00",
    "tiers": [
@@ -6668,7 +6668,7 @@
    "name_ko": "Porsche 尾翼设计",
    "name_zh": "保时捷尾翼设计",
    "status": "finished",
-   "total": null,
+   "total": 624181,
    "created_at": "2025-10-23T19:08:54.558+00:00",
    "updated_at": "2025-11-03T18:35:50.651973+00:00",
    "tiers": [
@@ -6719,7 +6719,7 @@
    "name_ko": "小自燃周末",
    "name_zh": "小自燃周末",
    "status": "finished",
-   "total": null,
+   "total": 137751,
    "created_at": "2025-10-31T13:25:14.215+00:00",
    "updated_at": "2025-11-02T10:13:01.604424+00:00",
    "tiers": [
@@ -6770,7 +6770,7 @@
    "name_ko": "精英S级",
    "name_zh": "精英S级",
    "status": "finished",
-   "total": null,
+   "total": 10227,
    "created_at": "2025-10-28T11:04:00.248+00:00",
    "updated_at": "2025-11-02T10:02:09.588431+00:00",
    "tiers": [
@@ -6817,7 +6817,7 @@
    "name_ko": "Legend Pass Showcase",
    "name_zh": "通行证展览",
    "status": "finished",
-   "total": null,
+   "total": 364346,
    "created_at": "2025-10-20T10:08:14.873+00:00",
    "updated_at": "2025-10-30T12:56:04.571081+00:00",
    "tiers": [
@@ -6848,7 +6848,7 @@
    "name_ko": "C-X75 자동차 사냥 본편",
    "name_zh": "C-X75暴乱",
    "status": "finished",
-   "total": null,
+   "total": 38826,
    "created_at": "2025-10-25T09:55:48.455+00:00",
    "updated_at": "2025-10-28T11:01:26.976094+00:00",
    "tiers": [
@@ -6883,7 +6883,7 @@
    "name_ko": "Bohema 자동차 사냥 본편",
    "name_zh": "Bohema暴乱",
    "status": "finished",
-   "total": null,
+   "total": 14389,
    "created_at": "2025-10-27T09:28:22.891+00:00",
    "updated_at": "2025-10-28T10:55:37.566855+00:00",
    "tiers": [
@@ -6918,7 +6918,7 @@
    "name_ko": "排灯节",
    "name_zh": "排灯节",
    "status": "finished",
-   "total": null,
+   "total": 229037,
    "created_at": "2025-10-20T10:27:03.941+00:00",
    "updated_at": "2025-10-23T19:05:50.399172+00:00",
    "tiers": [
@@ -6969,7 +6969,7 @@
    "name_ko": "精英赛B级",
    "name_zh": "精英赛B级",
    "status": "finished",
-   "total": null,
+   "total": 84226,
    "created_at": "2025-10-16T08:44:42.935+00:00",
    "updated_at": "2025-10-21T12:43:24.176293+00:00",
    "tiers": [
@@ -7016,7 +7016,7 @@
    "name_ko": "Mosler Super GT",
    "name_zh": "Mosler Super GT",
    "status": "finished",
-   "total": null,
+   "total": 23104,
    "created_at": "2025-10-12T13:29:20.953+00:00",
    "updated_at": "2025-10-16T09:38:23.560237+00:00",
    "tiers": [
@@ -7051,7 +7051,7 @@
    "name_ko": "SeasonOC Showcase",
    "name_zh": "赛季OC精选",
    "status": "finished",
-   "total": null,
+   "total": 484498,
    "created_at": "2025-10-08T13:17:32.729+00:00",
    "updated_at": "2025-10-16T09:38:19.436749+00:00",
    "tiers": [
@@ -7090,7 +7090,7 @@
    "name_ko": "CBentley 자동차 사냥 본편",
    "name_zh": "C宾利暴乱",
    "status": "finished",
-   "total": null,
+   "total": 42096,
    "created_at": "2025-10-10T19:38:44.998+00:00",
    "updated_at": "2025-10-14T09:18:58.915291+00:00",
    "tiers": [
@@ -7125,7 +7125,7 @@
    "name_ko": "Porsche -侧面设计",
    "name_zh": "保时捷-侧面设计",
    "status": "finished",
-   "total": null,
+   "total": 667543,
    "created_at": "2025-10-02T17:29:44.227311+00:00",
    "updated_at": "2025-10-12T09:46:47.642587+00:00",
    "tiers": [
@@ -7172,7 +7172,7 @@
    "name_ko": "FP1 특별 이벤트",
    "name_zh": "FP1特赛",
    "status": "finished",
-   "total": null,
+   "total": 25253,
    "created_at": "2025-09-28T05:15:32.800313+00:00",
    "updated_at": "2025-10-08T03:24:11.964846+00:00",
    "tiers": [
@@ -7207,7 +7207,7 @@
    "name_ko": "法拉利资格赛#4-599",
    "name_zh": "法拉利资格赛#4-599",
    "status": "finished",
-   "total": null,
+   "total": 542569,
    "created_at": "2025-09-27T12:54:26.45045+00:00",
    "updated_at": "2025-10-08T03:24:11.964846+00:00",
    "tiers": [
@@ -7238,7 +7238,7 @@
    "name_ko": "Legend Pass Showcase",
    "name_zh": "通行证展览",
    "status": "finished",
-   "total": null,
+   "total": 323717,
    "created_at": "2025-09-27T12:51:27.52008+00:00",
    "updated_at": "2025-10-08T03:24:11.964846+00:00",
    "tiers": [
@@ -7269,7 +7269,7 @@
    "name_ko": "CARRERA 자동차 사냥 본편",
    "name_zh": "CARRERA暴乱",
    "status": "finished",
-   "total": null,
+   "total": 70763,
    "created_at": "2025-09-26T11:50:35.773105+00:00",
    "updated_at": "2025-10-08T03:24:11.964846+00:00",
    "tiers": [
@@ -7347,7 +7347,7 @@
    "name_ko": "帕加尼乌托邦",
    "name_zh": "帕加尼乌托邦",
    "status": "finished",
-   "total": null,
+   "total": 189758,
    "created_at": "2025-09-24T10:29:22.897418+00:00",
    "updated_at": "2025-10-08T03:24:11.964846+00:00",
    "tiers": [
@@ -7374,7 +7374,7 @@
    "name_ko": "옥토버 페스트",
    "name_zh": "啤酒节",
    "status": "finished",
-   "total": null,
+   "total": 254354,
    "created_at": "2025-09-22T13:33:32.311336+00:00",
    "updated_at": "2025-10-08T03:24:11.964846+00:00",
    "tiers": [
@@ -7405,7 +7405,7 @@
    "name_ko": "每周竞赛",
    "name_zh": "每周竞赛",
    "status": "finished",
-   "total": null,
+   "total": 15893,
    "created_at": "2025-09-21T14:50:25.00225+00:00",
    "updated_at": "2025-10-08T03:24:11.964846+00:00",
    "tiers": [
@@ -7475,7 +7475,7 @@
    "name_ko": "ENZO 자동차 사냥 본편🔚",
    "name_zh": "ENZO暴乱🔚",
    "status": "finished",
-   "total": null,
+   "total": 35451,
    "created_at": "2025-09-19T09:33:50.971663+00:00",
    "updated_at": "2025-10-08T03:24:11.964846+00:00",
    "tiers": [
@@ -7510,7 +7510,7 @@
    "name_ko": "LEGO女武神🔚",
    "name_zh": "LEGO女武神🔚",
    "status": "finished",
-   "total": null,
+   "total": 25615,
    "created_at": "2025-09-19T09:31:50.501136+00:00",
    "updated_at": "2025-10-08T03:24:11.964846+00:00",
    "tiers": [
@@ -7576,7 +7576,7 @@
    "name_ko": "W12 특별 이벤트",
    "name_zh": "W12特赛",
    "status": "finished",
-   "total": null,
+   "total": 55273,
    "created_at": "2025-09-19T04:26:49.856926+00:00",
    "updated_at": "2025-10-08T03:24:11.964846+00:00",
    "tiers": [
