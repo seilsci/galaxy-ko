@@ -656,7 +656,7 @@
   },
   {
    "id": 265,
-   "name_ko": "ZENVO TS1 기간 한정 TLE",
+   "name_ko": "ZENVO TS1 TLE",
    "name_zh": "ZENVO TS1限时赛事",
    "status": "finished",
    "total": 188370,
@@ -765,7 +765,7 @@
   },
   {
    "id": 256,
-   "name_ko": "IMS∧ Spotlight",
+   "name_ko": "IMSA Spotlight",
    "name_zh": "IMS∧聚光灯",
    "status": "finished",
    "total": 810,
@@ -1134,7 +1134,7 @@
   },
   {
    "id": 249,
-   "name_ko": "맥주 축제",
+   "name_ko": "옥토버 페스트",
    "name_zh": "啤酒节",
    "status": "finished",
    "total": 239589,
@@ -1297,7 +1297,7 @@
   },
   {
    "id": 248,
-   "name_ko": "法拉利12C 특별 이벤트",
+   "name_ko": "12 Cilindri 특별 이벤트",
    "name_zh": "法拉利12C特赛",
    "status": "finished",
    "total": 28722,
@@ -1367,7 +1367,7 @@
   },
   {
    "id": 246,
-   "name_ko": "玛莎Alfieri 자동차 사냥 본편",
+   "name_ko": "Maserati Alfieri 자동차 사냥 본편",
    "name_zh": "玛莎Alfieri暴乱",
    "status": "finished",
    "total": 62328,
@@ -1402,7 +1402,7 @@
   },
   {
    "id": 242,
-   "name_ko": "墨西哥万岁",
+   "name_ko": "비바 멕시코",
    "name_zh": "墨西哥万岁",
    "status": "finished",
    "total": 157514,
@@ -1507,7 +1507,7 @@
   },
   {
    "id": 233,
-   "name_ko": "吃豆人 Spotlight",
+   "name_ko": "Pac-Man Spotlight",
    "name_zh": "吃豆人聚光灯",
    "status": "finished",
    "total": null,
@@ -1643,7 +1643,7 @@
   },
   {
    "id": 237,
-   "name_ko": "暑假尾声",
+   "name_ko": "여름의 끝",
    "name_zh": "暑假尾声",
    "status": "finished",
    "total": null,
@@ -1678,7 +1678,7 @@
   },
   {
    "id": 236,
-   "name_ko": "CCXR 기간 한정 TLE",
+   "name_ko": "CCXR TLE",
    "name_zh": "CCXR限时赛事",
    "status": "finished",
    "total": null,
@@ -1744,7 +1744,7 @@
   },
   {
    "id": 235,
-   "name_ko": "银电 특별 이벤트",
+   "name_ko": "Silver Lighting 특별 이벤트",
    "name_zh": "银电特赛",
    "status": "finished",
    "total": null,
@@ -1884,7 +1884,7 @@
   },
   {
    "id": 229,
-   "name_ko": "七夕节",
+   "name_ko": "칠석",
    "name_zh": "七夕节",
    "status": "finished",
    "total": null,
@@ -1981,7 +1981,7 @@
   },
   {
    "id": 225,
-   "name_ko": "狼王 기간 한정 TLE",
+   "name_ko": "Fenyr TLE",
    "name_zh": "狼王限时赛事",
    "status": "finished",
    "total": null,
@@ -2160,7 +2160,7 @@
   },
   {
    "id": 221,
-   "name_ko": "宾利 GT3",
+   "name_ko": "Bentley GT3",
    "name_zh": "宾利 GT3",
    "status": "finished",
    "total": null,
@@ -2195,7 +2195,7 @@
   },
   {
    "id": 220,
-   "name_ko": "夏季运动",
+   "name_ko": "썸머 스포츠",
    "name_zh": "夏季运动",
    "status": "finished",
    "total": null,
@@ -2257,7 +2257,7 @@
   },
   {
    "id": 218,
-   "name_ko": "好友集结",
+   "name_ko": "프렌즈 유나이트",
    "name_zh": "好友集结",
    "status": "finished",
    "total": null,
@@ -2362,7 +2362,7 @@
   },
   {
    "id": 215,
-   "name_ko": "美好游戏",
+   "name_ko": "뷰티풀 게임",
    "name_zh": "美好游戏",
    "status": "finished",
    "total": null,
@@ -2393,7 +2393,7 @@
   },
   {
    "id": 214,
-   "name_ko": "狂野飙车生日",
+   "name_ko": "Asphalt 생일",
    "name_zh": "狂野飙车生日",
    "status": "finished",
    "total": null,
@@ -2498,7 +2498,7 @@
   },
   {
    "id": 208,
-   "name_ko": "世界表情包日",
+   "name_ko": "세계 이모티콘의 날",
    "name_zh": "世界表情包日",
    "status": "finished",
    "total": null,
@@ -2642,7 +2642,7 @@
   },
   {
    "id": 207,
-   "name_ko": "幸运数字7",
+   "name_ko": "럭키 넘버 7",
    "name_zh": "幸运数字7",
    "status": "finished",
    "total": null,
@@ -3198,7 +3198,7 @@
   },
   {
    "id": 189,
-   "name_ko": "W12 기간 한정 TLE",
+   "name_ko": "W12 TLE",
    "name_zh": "W12限时赛事",
    "status": "finished",
    "total": null,
@@ -7087,7 +7087,7 @@
   },
   {
    "id": 79,
-   "name_ko": "C宾利 자동차 사냥 본편",
+   "name_ko": "CBentley 자동차 사냥 본편",
    "name_zh": "C宾利暴乱",
    "status": "finished",
    "total": null,
@@ -7371,7 +7371,7 @@
   },
   {
    "id": 27,
-   "name_ko": "맥주 축제",
+   "name_ko": "옥토버 페스트",
    "name_zh": "啤酒节",
    "status": "finished",
    "total": null,
