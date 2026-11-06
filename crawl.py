@@ -108,17 +108,28 @@ def parse_tiers(raw):
     return sorted(tiers, key=lambda t: t["pct"])
 
 
+def resolve_total(total, tiers):
+    """참가자 수가 0/없음(null)이면 상위 100% 순위를 참가자 수로 쓴다."""
+    if total:
+        return total
+    for t in tiers:
+        if t["pct"] == 100:
+            return t["rank"]
+    return total
+
+
 def build_event(row, glossary, cache):
     zh = (row.get("event_name") or "").strip()
+    tiers = parse_tiers(row.get("tier_ranks"))
     return {
         "id": row["id"],
         "name_ko": translate_name(zh, glossary, cache),
         "name_zh": zh,
         "status": row.get("status"),
-        "total": row.get("total_participants"),
+        "total": resolve_total(row.get("total_participants"), tiers),
         "created_at": row.get("created_at"),
         "updated_at": row.get("updated_at"),
-        "tiers": parse_tiers(row.get("tier_ranks")),
+        "tiers": tiers,
     }
 
 
