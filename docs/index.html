@@ -208,7 +208,7 @@ function render() {
   if (limit < all.length) {
     const more = el("button", "more", "더 보기 (" + (all.length - limit) + "개 남음)");
     more.type = "button";
-    more.addEventListener("click", () => { state.shown += STEP; render(); });
+    more.addEventListener("click", () => { state.shown = all.length; render(); });
     list.append(more);
   }
 }
