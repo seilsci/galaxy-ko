@@ -141,6 +141,15 @@ function el(tag, cls, text) {
   return node;
 }
 
+// total이 null/0이면 가장 큰 구간(상위 N%)의 순위로 역산해서 추정
+function getTotal(ev) {
+  if (ev.total) return { value: ev.total, estimated: false };
+  const tiers = (ev.tiers || []).filter(t => t.pct > 0 && t.rank > 0);
+  if (!tiers.length) return null;
+  const top = tiers.reduce((a, b) => (b.pct > a.pct ? b : a));
+  return { value: Math.round(top.rank * 100 / top.pct), estimated: true };
+}
+
 function renderEvent(ev) {
   const card = el("article", "event");
   const head = el("div", "event-head");
@@ -158,8 +167,9 @@ function renderEvent(ev) {
   head.append(zh);
 
   const meta = el("p", "meta");
-  const people = el("span", "", "참가자 ");
-  people.append(el("strong", "num", nf.format(ev.total || 0)), "명");
+  const tot = getTotal(ev);
+  const people = el("span", "", tot && tot.estimated ? "참가자 약 " : "참가자 ");
+  people.append(el("strong", "num", tot ? nf.format(tot.value) : "-"), tot ? "명" : "");
   meta.append(people, el("span", "", kstShort(ev.updated_at)));
   head.append(meta);
   card.append(head);
