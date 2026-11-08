@@ -4874,7 +4874,7 @@
   },
   {
    "id": 140,
-   "name_ko": "S 엘리트 대회 [Switch]",
+   "name_ko": "엘리트 S[Switch]",
    "name_zh": "S精英赛[Switch]",
    "status": "finished",
    "total": 9413,
@@ -6837,7 +6837,7 @@
   },
   {
    "id": 91,
-   "name_ko": "엘리트 S급",
+   "name_ko": "엘리트 S",
    "name_zh": "精英S级",
    "status": "finished",
    "total": 10227,
@@ -7036,7 +7036,7 @@
   },
   {
    "id": 81,
-   "name_ko": "엘리트 대회 B급",
+   "name_ko": "엘리트 B",
    "name_zh": "精英赛B级",
    "status": "finished",
    "total": 84226,
@@ -7371,7 +7371,7 @@
   },
   {
    "id": 30,
-   "name_ko": "엘리트 대회 ：S급",
+   "name_ko": "엘리트 S",
    "name_zh": "精英赛：S级",
    "status": "finished",
    "total": null,
@@ -7499,7 +7499,7 @@
   },
   {
    "id": 25,
-   "name_ko": "엘리트 대회 ：A급",
+   "name_ko": "엘리트 A",
    "name_zh": "精英赛：A级",
    "status": "finished",
    "total": null,
