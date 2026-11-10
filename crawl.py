@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""狂野飙车传奇 순위 데이터를 가져와 한국어 이름을 붙여 docs/data.json 으로 저장한다."""
+"""狂野飙车传奇 순위 데이터를 가져와 한국어 이름을 붙여 docs/data.json 으로 저장한다.
+
+기존 data.json에 있던 대회는 원본 서버에서 사라져도 지우지 않고 보존한다(병합).
+"""
 import json
 import os
 import re
@@ -20,7 +23,10 @@ OUT_PATH = ROOT / "docs" / "data.json"
 
 def load_json(path, default):
     if path.exists():
-        return json.loads(path.read_text(encoding="utf-8"))
+        try:
+            return json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            print(f"{path.name} 을(를) 읽지 못해 기본값을 사용합니다.", file=sys.stderr)
     return default
 
 
@@ -133,6 +139,22 @@ def build_event(row, glossary, cache):
     }
 
 
+def merge_events(old_events, new_events):
+    """id 기준으로 병합한다. 새로 받은 값이 우선이고, 원본에서 사라진 대회는 그대로 남긴다."""
+    merged = {e["id"]: e for e in old_events if isinstance(e, dict) and "id" in e}
+    kept = len(merged)
+    for e in new_events:
+        merged[e["id"]] = e
+    kept_only = len(merged) - len(new_events)
+    print(f"기존 {kept}개 + 새로 받은 {len(new_events)}개 → 병합 {len(merged)}개 "
+          f"(원본에서 사라졌지만 보존한 대회 {max(kept_only, 0)}개)")
+    return sorted(
+        merged.values(),
+        key=lambda e: (e.get("updated_at") or "", str(e["id"])),
+        reverse=True,
+    )
+
+
 def main():
     key = os.environ.get("SUPABASE_ANON_KEY")
     if not key:
@@ -144,8 +166,10 @@ def main():
 
     glossary = load_json(GLOSSARY_PATH, {})
     cache = load_json(CACHE_PATH, {})
+    old = load_json(OUT_PATH, {})
 
-    events = [build_event(r, glossary, cache) for r in rows]
+    new_events = [build_event(r, glossary, cache) for r in rows]
+    events = merge_events(old.get("events", []), new_events)
     result = {
         "latest_update": max(e["updated_at"] for e in events if e["updated_at"]),
         "events": events,
