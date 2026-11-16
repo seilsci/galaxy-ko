@@ -1,26 +1,26 @@
 {
- "latest_update": "2026-11-16T17:00:07.599621+00:00",
+ "latest_update": "2026-11-16T18:00:07.744131+00:00",
  "events": [
   {
    "id": 283,
    "name_ko": "Electrified SC 언리쉬드",
    "name_zh": "雷电惊艳亮相",
    "status": "active",
-   "total": 42779,
+   "total": 42861,
    "created_at": "2026-11-05T12:55:25.073+00:00",
-   "updated_at": "2026-11-16T17:00:07.599621+00:00",
+   "updated_at": "2026-11-16T18:00:07.744131+00:00",
    "tiers": [
     {
      "pct": 50,
-     "rank": 21389
+     "rank": 21430
     },
     {
      "pct": 75,
-     "rank": 32084
+     "rank": 32145
     },
     {
      "pct": 100,
-     "rank": 42779
+     "rank": 42861
     }
    ]
   },
@@ -29,33 +29,33 @@
    "name_ko": "Movember",
    "name_zh": "Movember",
    "status": "active",
-   "total": 248332,
+   "total": 248715,
    "created_at": "2026-11-02T14:08:09.679+00:00",
-   "updated_at": "2026-11-16T17:00:07.217794+00:00",
+   "updated_at": "2026-11-16T18:00:07.29177+00:00",
    "tiers": [
     {
      "pct": 10,
-     "rank": 24833
+     "rank": 24871
     },
     {
      "pct": 20,
-     "rank": 49666
+     "rank": 49743
     },
     {
      "pct": 40,
-     "rank": 99332
+     "rank": 99486
     },
     {
      "pct": 60,
-     "rank": 148999
+     "rank": 149229
     },
     {
      "pct": 80,
-     "rank": 198665
+     "rank": 198972
     },
     {
      "pct": 100,
-     "rank": 248332
+     "rank": 248715
     }
    ]
   },
@@ -64,37 +64,37 @@
    "name_ko": "OC Showcase",
    "name_zh": "OC精选",
    "status": "active",
-   "total": 144174,
+   "total": 144932,
    "created_at": "2026-11-11T13:36:47.462+00:00",
-   "updated_at": "2026-11-16T17:00:06.72867+00:00",
+   "updated_at": "2026-11-16T18:00:06.749462+00:00",
    "tiers": [
     {
      "pct": 1,
-     "rank": 1441
+     "rank": 1449
     },
     {
      "pct": 10,
-     "rank": 14417
+     "rank": 14493
     },
     {
      "pct": 20,
-     "rank": 28834
+     "rank": 28986
     },
     {
      "pct": 40,
-     "rank": 57669
+     "rank": 57972
     },
     {
      "pct": 60,
-     "rank": 86504
+     "rank": 86959
     },
     {
      "pct": 80,
-     "rank": 115339
+     "rank": 115945
     },
     {
      "pct": 100,
-     "rank": 144174
+     "rank": 144932
     }
    ]
   },
@@ -103,29 +103,29 @@
    "name_ko": "Legend Pass Showcase",
    "name_zh": "通行证展览",
    "status": "active",
-   "total": 198569,
+   "total": 199792,
    "created_at": "2026-11-11T13:35:58.333+00:00",
-   "updated_at": "2026-11-16T17:00:06.265845+00:00",
+   "updated_at": "2026-11-16T18:00:06.070063+00:00",
    "tiers": [
     {
      "pct": 1,
-     "rank": 1985
+     "rank": 1997
     },
     {
      "pct": 5,
-     "rank": 9928
+     "rank": 9989
     },
     {
      "pct": 25,
-     "rank": 49642
+     "rank": 49948
     },
     {
      "pct": 50,
-     "rank": 99284
+     "rank": 99896
     },
     {
      "pct": 100,
-     "rank": 198569
+     "rank": 199792
     }
    ]
   },
@@ -134,33 +134,33 @@
    "name_ko": "Concept_S TLE",
    "name_zh": "Concept_S限时赛事",
    "status": "active",
-   "total": 132713,
+   "total": 133618,
    "created_at": "2026-11-13T20:07:08.677+00:00",
-   "updated_at": "2026-11-16T17:00:05.617404+00:00",
+   "updated_at": "2026-11-16T18:00:05.326861+00:00",
    "tiers": [
     {
      "pct": 10,
-     "rank": 13271
+     "rank": 13361
     },
     {
      "pct": 20,
-     "rank": 26542
+     "rank": 26723
     },
     {
      "pct": 40,
-     "rank": 53085
+     "rank": 53447
     },
     {
      "pct": 60,
-     "rank": 79627
+     "rank": 80170
     },
     {
      "pct": 80,
-     "rank": 106170
+     "rank": 106894
     },
     {
      "pct": 100,
-     "rank": 132713
+     "rank": 133618
     }
    ]
   },
