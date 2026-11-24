@@ -1,6 +1,41 @@
 {
- "latest_update": "2026-11-24T09:00:20.908408+00:00",
+ "latest_update": "2026-11-24T09:08:48.655368+00:00",
  "events": [
+  {
+   "id": 297,
+   "name_ko": "TVR Speed 12",
+   "name_zh": "TVR Speed 12 骚乱",
+   "status": "active",
+   "total": 188,
+   "created_at": "2026-11-24T09:08:11.343+00:00",
+   "updated_at": "2026-11-24T09:08:48.655368+00:00",
+   "tiers": [
+    {
+     "pct": 5,
+     "rank": 9
+    },
+    {
+     "pct": 10,
+     "rank": 18
+    },
+    {
+     "pct": 25,
+     "rank": 47
+    },
+    {
+     "pct": 50,
+     "rank": 94
+    },
+    {
+     "pct": 75,
+     "rank": 141
+    },
+    {
+     "pct": 100,
+     "rank": 188
+    }
+   ]
+  },
   {
    "id": 291,
    "name_ko": "Ferrari 488 자동차 사냥 본편",
