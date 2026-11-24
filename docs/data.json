@@ -1,14 +1,14 @@
 {
- "latest_update": "2026-11-24T13:00:10.814172+00:00",
+ "latest_update": "2026-11-24T13:43:40.495768+00:00",
  "events": [
   {
    "id": 291,
    "name_ko": "Ferrari 488 자동차 사냥 본편",
    "name_zh": "法拉利488暴乱",
-   "status": "active",
+   "status": "finished",
    "total": 77228,
    "created_at": "2026-11-19T16:08:24.774+00:00",
-   "updated_at": "2026-11-24T13:00:10.814172+00:00",
+   "updated_at": "2026-11-24T13:43:40.495768+00:00",
    "tiers": [
     {
      "pct": 1,
