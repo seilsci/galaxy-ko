@@ -209,7 +209,9 @@ function render() {
   const all = state.events
     .filter(e => (state.tab === "active") === isActive(e))
     .filter(matches)
-    .sort((a, b) => collator.compare(a.name_ko, b.name_ko));
+    .sort(state.tab === "active"
+      ? (a, b) => collator.compare(a.name_ko, b.name_ko)
+      : (a, b) => new Date(b.updated_at) - new Date(a.updated_at) || b.id - a.id);
   if (!all.length) {
     list.append(el("p", "empty", q ? "검색 결과가 없습니다. 다른 이름으로 찾아보세요." : "표시할 대회가 없습니다."));
     return;
