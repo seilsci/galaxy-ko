@@ -60,10 +60,8 @@
   .badge { flex: none; font-size: .72rem; font-weight: 500; padding: .05rem .5rem; border-radius: 999px; }
   .badge.active { background: var(--go-bg); color: var(--go); }
   .badge.finished { background: var(--done-bg); color: var(--muted); }
-  .zh-row { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.4; }
-  .zh { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .time { flex: none; white-space: nowrap; }
-  .meta { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; margin: .1rem 0 0; font-size: .78rem; color: var(--muted); }
+  .zh { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.4; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .meta { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; margin: .3rem 0 0; font-size: .78rem; color: var(--muted); }
   .meta strong { color: var(--ink); font-weight: 700; font-size: 1.05rem; }
 
   .ladder { list-style: none; margin: 0; padding: .35rem .85rem .6rem; }
@@ -82,12 +80,15 @@
   /* 모바일: 2열 + 카드 압축 */
   @media (max-width: 540px) {
     .wrap { padding: 0 .5rem; }
+    .tabs { flex: 1 0 100%; }
+    .controls input { flex: 1 1 0; }
+    .updated { margin-left: 0; font-size: .75rem; white-space: nowrap; }
     .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; padding-top: .5rem; }
     .event-head { padding: .5rem .55rem .4rem; }
     .title-row h2 { font-size: .85rem; }
     .badge { display: none; }
-    .zh-row { font-size: .68rem; gap: .3rem; }
-    .meta { font-size: .7rem; margin-top: 0; flex-wrap: wrap; gap: 0 .4rem; }
+    .zh { font-size: .68rem; }
+    .meta { font-size: .7rem; margin-top: .15rem; flex-wrap: wrap; gap: 0 .4rem; }
     .meta strong { font-size: .95rem; }
     .ladder { padding: .3rem .55rem .45rem; }
     .ladder li { grid-template-columns: 3.3rem 1fr 3.7rem; gap: .3rem; padding: .08rem 0; }
@@ -166,17 +167,15 @@ function renderEvent(ev) {
   head.append(row);
 
   const hasZh = ev.name_zh && ev.name_zh !== ev.name_ko;
-  const zhRow = el("p", "zh-row");
-  const zh = el("span", "zh", hasZh ? ev.name_zh : "");
+  const zh = el("p", "zh", hasZh ? ev.name_zh : "\u00a0");
   if (hasZh) zh.title = ev.name_zh;
-  zhRow.append(zh, el("span", "time", kstShort(ev.updated_at)));
-  head.append(zhRow);
+  head.append(zh);
 
   const meta = el("p", "meta");
   const tot = getTotal(ev);
   const people = el("span", "", tot && tot.estimated ? "참가자 약 " : "참가자 ");
   people.append(el("strong", "num", tot ? nf.format(tot.value) : "-"), tot ? "명" : "");
-  meta.append(people);
+  meta.append(people, el("span", "", kstShort(ev.updated_at)));
   head.append(meta);
   card.append(head);
 
