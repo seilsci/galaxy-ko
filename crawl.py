@@ -7,8 +7,11 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.request
 from pathlib import Path
+
+from history import add_snapshot, load_history, save_history
 
 ROOT = Path(__file__).resolve().parent
 API = "https://jflpzvmpjeeqfkvqppuq.supabase.co/rest/v1/leaderboards"
@@ -174,6 +177,13 @@ def main():
         "latest_update": max(e["updated_at"] for e in events if e["updated_at"]),
         "events": events,
     }
+
+    # 시간대별 기록(docs/history.json): 값이 바뀐 대회만 새 점을 더한다
+    history = load_history()
+    now = int(time.time())
+    added = sum(1 for e in new_events if add_snapshot(history, e, fallback_ts=now))
+    save_history(history)
+    print(f"시간대별 기록: 새 점 {added}개 추가")
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(

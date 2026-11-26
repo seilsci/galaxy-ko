@@ -77,6 +77,37 @@
   footer { border-top: 1px solid var(--line); padding: .9rem 0; color: var(--muted); font-size: .82rem; text-align: center; }
   footer a { color: inherit; }
 
+  .trend-row { padding: 0 .85rem .75rem; }
+  .trend { width: 100%; font: inherit; font-size: .85rem; font-weight: 500; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: .35rem .6rem; min-height: 40px; cursor: pointer; }
+  .trend:hover { border-color: var(--tarmac); }
+
+  /* 시간대별 그래프 창 */
+  .tm { position: fixed; inset: 0; z-index: 50; background: rgba(20, 25, 32, .55); display: flex; align-items: center; justify-content: center; padding: 1rem; }
+  .tm[hidden] { display: none; }
+  .tm-box { background: var(--paper); border-radius: 10px; width: min(960px, 100%); max-height: calc(100vh - 2rem); overflow: auto; padding: .8rem 1rem 1rem; box-shadow: 0 10px 40px rgba(0,0,0,.3); }
+  .tm-h { display: flex; align-items: flex-start; gap: .6rem; }
+  .tm-h h3 { flex: 1; min-width: 0; margin: 0; font-size: 1.1rem; line-height: 1.35; }
+  .tm-h small { display: block; color: var(--muted); font-weight: 400; font-size: .75rem; }
+  .tm-x { flex: none; font: inherit; font-size: .85rem; font-weight: 500; color: var(--ink); background: var(--done-bg); border: 1px solid var(--line); border-radius: 999px; padding: .2rem .8rem; min-height: 36px; cursor: pointer; }
+  .tm-opts { display: flex; flex-wrap: wrap; gap: .4rem .8rem; align-items: center; margin: .6rem 0 .3rem; }
+  .seg { display: flex; gap: .25rem; }
+  .seg button { font: inherit; font-size: .78rem; color: var(--muted); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: .1rem .65rem; min-height: 30px; cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--tarmac); border-color: var(--tarmac); color: #fff; }
+  .tm-leg { display: flex; flex-wrap: wrap; gap: .3rem .5rem; margin: .2rem 0 .3rem; }
+  .tm-leg button { font: inherit; font-size: .78rem; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: .05rem .6rem .05rem .45rem; min-height: 28px; cursor: pointer; display: inline-flex; align-items: center; gap: .3rem; }
+  .tm-leg button[aria-pressed="false"] { opacity: .4; }
+  .tm-leg i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .tm-cvwrap { position: relative; }
+  #tm-cv { display: block; width: 100%; height: 300px; touch-action: pan-y; cursor: crosshair; }
+  .tm-note { margin: .3rem 0 0; color: var(--muted); font-size: .78rem; }
+  .tm-empty { padding: 2.5rem 1rem; text-align: center; color: var(--muted); }
+  #tm-tip { position: fixed; z-index: 60; display: none; pointer-events: none; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: .45rem .6rem; font-size: .8rem; box-shadow: 0 4px 16px rgba(0,0,0,.25); }
+  #tm-tip b.t { display: block; margin-bottom: .15rem; }
+  #tm-tip table { border-collapse: collapse; }
+  #tm-tip td { padding: .05rem 0 .05rem .8rem; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  #tm-tip td:first-child { text-align: left; padding-left: 0; color: var(--muted); }
+  #tm-tip td i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: .35rem; }
+
   /* 모바일: 2열 + 카드 압축 */
   @media (max-width: 540px) {
     .wrap { padding: 0 .5rem; }
@@ -96,6 +127,11 @@
     .bar { height: 6px; }
     .rank { font-size: 1rem; }
     .rank small { font-size: .65rem; }
+    .trend-row { padding: 0 .55rem .55rem; }
+    .trend { font-size: .75rem; padding: .3rem .3rem; }
+    .tm { padding: .5rem; align-items: flex-end; }
+    .tm-box { padding: .7rem .7rem .9rem; }
+    #tm-cv { height: 260px; }
   }
 </style>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="c7e82cdb-586e-4ebb-863f-c08773dea269"></script>
@@ -119,6 +155,20 @@
   </div>
   <main id="list" aria-live="polite"></main>
 </div>
+
+<div class="tm" id="tm" hidden role="dialog" aria-modal="true" aria-labelledby="tm-title">
+  <div class="tm-box">
+    <div class="tm-h"><h3 id="tm-title"></h3><button type="button" class="tm-x" id="tm-close">닫기 ✕</button></div>
+    <div class="tm-opts">
+      <div class="seg" id="tm-range" role="group" aria-label="기간"></div>
+      <div class="seg" id="tm-scale" role="group" aria-label="눈금"></div>
+    </div>
+    <div class="tm-leg" id="tm-leg"></div>
+    <div class="tm-cvwrap"><canvas id="tm-cv" aria-label="시간대별 상위 % 컷 순위 꺾은선 그래프"></canvas></div>
+    <p class="tm-note" id="tm-note"></p>
+  </div>
+</div>
+<div id="tm-tip"></div>
 
 <footer>
   <div class="wrap">
@@ -192,6 +242,12 @@ function renderEvent(ev) {
     ladder.append(li);
   }
   card.append(ladder);
+  const trendRow = el("div", "trend-row");
+  const trendBtn = el("button", "trend", "📈 시간대별 변화");
+  trendBtn.type = "button";
+  trendBtn.addEventListener("click", () => openTrend(ev, trendBtn));
+  trendRow.append(trendBtn);
+  card.append(trendRow);
   return card;
 }
 
@@ -237,10 +293,203 @@ document.querySelectorAll(".tabs button").forEach(b =>
   b.addEventListener("click", () => { state.tab = b.dataset.tab; state.shown = STEP; render(); }));
 document.getElementById("q").addEventListener("input", e => { state.q = e.target.value; state.shown = STEP; render(); });
 
+/* ───── 시간대별 변화 그래프 (꺾은선) ───── */
+let HIST = null;
+function loadHist() {
+  if (HIST) return Promise.resolve(HIST);
+  return fetch("history.json", { cache: "no-store" })
+    .then(r => (r.ok ? r.json() : { events: {} }))
+    .catch(() => ({ events: {} }))
+    .then(h => (HIST = h));
+}
+const TREND = { ev: null, rows: [], pcts: [], on: new Set(), range: 0, log: true, opener: null, hi: null };
+const PALETTE = ["#d8392b", "#e8870e", "#b79500", "#1d7f49", "#1e88c8", "#6b4fd8", "#9b3a9d", "#555e69"];
+const RANGES = [["전체", 0], ["7일", 7 * 864e5], ["3일", 3 * 864e5], ["24시간", 864e5]];
+const hhmm = t => new Date(t).toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false });
+
+function buildRows(ev) {
+  const pts = (HIST && HIST.events[String(ev.id)]) || [];
+  let pcts = null; const rows = [];
+  pts.forEach(p => {
+    if (p[3]) pcts = p[3];
+    if (!pcts) return;
+    const r = {}; pcts.forEach((x, i) => { r[x] = p[2][i]; });
+    rows.push({ t: p[0] * 1000, total: p[1], r });
+  });
+  if (rows.length && ev.status === "active" && state.latest) {         // 진행 중 대회는 마지막 값이 지금까지 이어진 것으로 그림
+    const last = rows[rows.length - 1], now = new Date(state.latest).getTime();
+    if (now > last.t) rows.push({ t: now, total: last.total, r: last.r, ext: true });
+  }
+  const set = new Set(); rows.forEach(r => Object.keys(r.r).forEach(k => set.add(+k)));
+  return { rows, pcts: [...set].sort((a, b) => a - b) };
+}
+
+function openTrend(ev, opener) {
+  loadHist().then(() => {
+    const b = buildRows(ev);
+    Object.assign(TREND, { ev, rows: b.rows, pcts: b.pcts, on: new Set(b.pcts), range: 0, opener, hi: null });
+    document.getElementById("tm-title").replaceChildren(ev.name_ko,
+      Object.assign(el("small", "", (ev.name_zh && ev.name_zh !== ev.name_ko ? ev.name_zh + " · " : "") + (ev.status === "active" ? "진행 중" : "종료"))));
+    renderOpts();
+    document.getElementById("tm").hidden = false;
+    document.body.style.overflow = "hidden";
+    document.getElementById("tm-close").focus();
+    drawTrend();
+  });
+}
+function closeTrend() {
+  document.getElementById("tm").hidden = true;
+  document.body.style.overflow = "";
+  hideTip();
+  if (TREND.opener) TREND.opener.focus();
+}
+function renderOpts() {
+  const rg = document.getElementById("tm-range"), sc = document.getElementById("tm-scale"), lg = document.getElementById("tm-leg");
+  rg.replaceChildren(); sc.replaceChildren(); lg.replaceChildren();
+  RANGES.forEach(([label, ms]) => {
+    const b = el("button", "", label); b.type = "button"; b.setAttribute("aria-pressed", String(TREND.range === ms));
+    b.addEventListener("click", () => { TREND.range = ms; TREND.hi = null; renderOpts(); drawTrend(); });
+    rg.append(b);
+  });
+  [["로그 눈금", true], ["선형 눈금", false]].forEach(([label, v]) => {
+    const b = el("button", "", label); b.type = "button"; b.setAttribute("aria-pressed", String(TREND.log === v));
+    b.addEventListener("click", () => { TREND.log = v; renderOpts(); drawTrend(); });
+    sc.append(b);
+  });
+  TREND.pcts.forEach((p, i) => {
+    const b = el("button"); b.type = "button"; b.setAttribute("aria-pressed", String(TREND.on.has(p)));
+    const dot = document.createElement("i"); dot.style.background = PALETTE[i % PALETTE.length];
+    b.append(dot, "상위 " + p + "%");
+    b.addEventListener("click", () => { TREND.on.has(p) ? TREND.on.delete(p) : TREND.on.add(p); if (!TREND.on.size) TREND.on.add(p); renderOpts(); drawTrend(); });
+    lg.append(b);
+  });
+}
+
+function niceTicks(lo, hi, n) {
+  const span = hi - lo || 1, raw = span / n, mag = Math.pow(10, Math.floor(Math.log10(raw)));
+  const step = [1, 2, 2.5, 5, 10].map(m => m * mag).find(s => s >= raw) || raw;
+  const out = []; for (let v = Math.ceil(lo / step) * step; v <= hi + 1e-9; v += step) out.push(v); return out;
+}
+function logTicks(lo, hi) {
+  const out = []; const a = Math.floor(Math.log10(lo)), b = Math.ceil(Math.log10(hi));
+  for (let e = a; e <= b; e++) [1, 2, 5].forEach(m => { const v = m * Math.pow(10, e); if (v >= lo * 0.999 && v <= hi * 1.001) out.push(v); });
+  return out;
+}
+function timeTicks(t0, t1, width) {
+  const H = 36e5, D = 24 * H, off = 9 * H, steps = [H, 3 * H, 6 * H, 12 * H, D, 2 * D, 7 * D];
+  const want = Math.max(2, Math.floor(width / 60));
+  const step = steps.find(s => (t1 - t0) / s <= want) || 7 * D;
+  const out = []; for (let t = Math.ceil((t0 + off) / step) * step - off; t <= t1; t += step) out.push(t);
+  return { out, step, day: step >= D };
+}
+
+function drawTrend() {
+  const cv = document.getElementById("tm-cv"), note = document.getElementById("tm-note");
+  const wrap = cv.parentNode;
+  wrap.querySelectorAll(".tm-empty").forEach(n => n.remove());
+  const allRows = TREND.rows;
+  if (allRows.length < 2) {
+    cv.style.display = "none"; note.textContent = "";
+    wrap.append(el("p", "tm-empty", "아직 시간대별 기록이 부족해서 그래프를 그릴 수 없어요. 데이터가 쌓이면 보여요."));
+    return;
+  }
+  cv.style.display = "block";
+  const tEnd = allRows[allRows.length - 1].t;
+  const rows = TREND.range ? allRows.filter(r => r.t >= tEnd - TREND.range) : allRows;
+  // 기간을 줄였을 때 시작점이 비지 않게 그 직전 값도 포함
+  if (TREND.range && rows.length < allRows.length) { const i = allRows.indexOf(rows[0]); if (i > 0) rows.unshift(allRows[i - 1]); }
+  const vis = TREND.pcts.filter(p => TREND.on.has(p));
+  const W = cv.clientWidth || 600, H = cv.clientHeight || 300, dpr = window.devicePixelRatio || 1;
+  cv.width = W * dpr; cv.height = H * dpr;
+  const g = cv.getContext("2d"); g.setTransform(dpr, 0, 0, dpr, 0, 0); g.clearRect(0, 0, W, H);
+  const L = 56, R = 12, T = 10, B = 26, pw = W - L - R, ph = H - T - B;
+  const t0 = Math.max(rows[0].t, TREND.range ? tEnd - TREND.range : rows[0].t), t1 = tEnd;
+  let lo = Infinity, hi = -Infinity;
+  rows.forEach(r => vis.forEach(p => { const v = r.r[p]; if (v > 0) { lo = Math.min(lo, v); hi = Math.max(hi, v); } }));
+  if (!isFinite(lo)) { lo = 1; hi = 10; }
+  const logS = TREND.log && lo > 0;
+  let ylo, yhi;
+  if (logS) { ylo = Math.pow(10, Math.floor(Math.log10(lo) * 4) / 4) * 0.9; yhi = hi * 1.1; if (yhi <= ylo) yhi = ylo * 10; }
+  else { ylo = 0; yhi = hi * 1.06; }
+  const X = t => L + (t1 === t0 ? 0 : (t - t0) / (t1 - t0) * pw);
+  const Y = v => T + (logS ? (Math.log(yhi) - Math.log(Math.max(v, ylo))) / (Math.log(yhi) - Math.log(ylo)) : (yhi - v) / (yhi - ylo)) * ph;
+  const css = getComputedStyle(document.documentElement), line = css.getPropertyValue("--line").trim(), muted = css.getPropertyValue("--muted").trim();
+  g.font = '12px "Barlow Condensed", "Noto Sans KR", sans-serif'; g.textBaseline = "middle";
+  // 세로 눈금(순위)
+  (logS ? logTicks(ylo, yhi) : niceTicks(ylo, yhi, 5)).forEach(v => {
+    const y = Y(v); g.strokeStyle = line; g.lineWidth = 1; g.beginPath(); g.moveTo(L, y); g.lineTo(L + pw, y); g.stroke();
+    g.fillStyle = muted; g.textAlign = "right"; g.fillText(nf.format(v), L - 6, y);
+  });
+  // 가로 눈금(시각)
+  const tk = timeTicks(t0, t1, pw); g.textAlign = "center"; g.textBaseline = "top";
+  tk.out.forEach(t => {
+    const x = X(t); g.strokeStyle = line; g.beginPath(); g.moveTo(x, T); g.lineTo(x, T + ph); g.stroke();
+    const d = new Date(t + 9 * 36e5), lab = tk.day ? (d.getUTCMonth() + 1) + "/" + d.getUTCDate() : (d.getUTCMonth() + 1) + "/" + d.getUTCDate() + " " + d.getUTCHours() + "시";
+    g.fillStyle = muted; g.fillText(lab, Math.min(Math.max(x, L + 16), L + pw - 16), T + ph + 6);
+  });
+  // 선
+  vis.slice().reverse().forEach(p => {
+    const color = PALETTE[TREND.pcts.indexOf(p) % PALETTE.length];
+    g.strokeStyle = color; g.lineWidth = 2; g.lineJoin = "round"; g.beginPath(); let st = false;
+    rows.forEach(r => { const v = r.r[p]; if (!(v > 0)) return; const x = X(r.t), y = Y(v); if (!st) { g.moveTo(x, y); st = true; } else g.lineTo(x, y); });
+    g.stroke();
+  });
+  // 마우스·손가락 위치 표시
+  if (TREND.hi != null && rows[TREND.hi]) {
+    const r = rows[TREND.hi], x = X(r.t);
+    g.strokeStyle = muted; g.setLineDash([4, 3]); g.beginPath(); g.moveTo(x, T); g.lineTo(x, T + ph); g.stroke(); g.setLineDash([]);
+    vis.forEach(p => { const v = r.r[p]; if (!(v > 0)) return; g.fillStyle = PALETTE[TREND.pcts.indexOf(p) % PALETTE.length]; g.strokeStyle = "#fff"; g.lineWidth = 1.5; g.beginPath(); g.arc(x, Y(v), 4, 0, 6.2832); g.fill(); g.stroke(); });
+  }
+  note.textContent = "기록 " + allRows.filter(r => !r.ext).length + "개 · " + hhmm(allRows[0].t) + " ~ " + hhmm(tEnd) + " (한국 시간) · 값이 바뀐 시점마다 기록돼요";
+  cv._g = { rows, vis, X, L, pw, T, ph, t0, t1 };
+}
+
+function hideTip() { document.getElementById("tm-tip").style.display = "none"; if (TREND.hi != null) { TREND.hi = null; if (!document.getElementById("tm").hidden) drawTrend(); } }
+function showTip(ev, i) {
+  const cv = document.getElementById("tm-cv"), G = cv._g; if (!G) return;
+  const r = G.rows[i], tip = document.getElementById("tm-tip");
+  const t = el("b", "t", hhmm(r.t)), table = document.createElement("table");
+  G.vis.forEach(p => {
+    if (!(r.r[p] > 0)) return;
+    const tr = document.createElement("tr"), a = document.createElement("td"), dot = document.createElement("i");
+    dot.style.background = PALETTE[TREND.pcts.indexOf(p) % PALETTE.length];
+    a.append(dot, "상위 " + p + "%");
+    tr.append(a, el("td", "num", nf.format(r.r[p]) + "위")); table.append(tr);
+  });
+  if (r.total) { const tr = document.createElement("tr"); tr.append(el("td", "", "참가자"), el("td", "num", nf.format(r.total) + "명")); table.append(tr); }
+  tip.replaceChildren(t, table); tip.style.display = "block";
+  const vw = Math.min(window.innerWidth, document.documentElement.clientWidth || window.innerWidth), touch = ev.pointerType === "touch";
+  const w = tip.offsetWidth, h = tip.offsetHeight;
+  let x = touch ? ev.clientX - w / 2 : ev.clientX + 14, y = touch ? ev.clientY - h - 28 : ev.clientY - h - 12;
+  if (x + w > vw - 8) x = touch ? vw - w - 8 : ev.clientX - w - 14;
+  if (x < 8) x = 8; if (y < 8) y = Math.min(ev.clientY + 22, window.innerHeight - h - 8);
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+}
+function onPointer(ev) {
+  const cv = document.getElementById("tm-cv"), G = cv._g; if (!G) return;
+  const rect = cv.getBoundingClientRect(), x = ev.clientX - rect.left;
+  let best = 0, bd = Infinity;
+  G.rows.forEach((r, i) => { const d = Math.abs(G.X(r.t) - x); if (d < bd) { bd = d; best = i; } });
+  if (TREND.hi !== best) { TREND.hi = best; drawTrend(); }
+  showTip(ev, best);
+}
+(function () {
+  const cv = document.getElementById("tm-cv");
+  cv.addEventListener("pointermove", onPointer);
+  cv.addEventListener("pointerdown", onPointer);
+  cv.addEventListener("pointerleave", e => { if (e.pointerType !== "touch") hideTip(); });   // 터치는 손을 떼도 유지, 그래프 밖을 누르면 사라짐
+  document.addEventListener("pointerdown", e => { if (e.target !== cv && !e.target.closest("#tm-tip")) hideTip(); });
+  document.getElementById("tm-close").addEventListener("click", closeTrend);
+  document.getElementById("tm").addEventListener("click", e => { if (e.target.id === "tm") closeTrend(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !document.getElementById("tm").hidden) closeTrend(); });
+  window.addEventListener("resize", () => { if (!document.getElementById("tm").hidden) drawTrend(); });
+})();
+
 fetch("data.json", { cache: "no-store" })
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(data => {
     state.events = data.events;
+    state.latest = data.latest_update;
     document.getElementById("updated").textContent = "데이터 기준 " + kstFull(data.latest_update);
     render();
   })
