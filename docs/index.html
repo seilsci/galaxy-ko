@@ -302,7 +302,7 @@ function loadHist() {
     .catch(() => ({ events: {} }))
     .then(h => (HIST = h));
 }
-const TREND = { ev: null, rows: [], pcts: [], on: new Set(), range: 0, log: true, opener: null, hi: null };
+const TREND = { ev: null, rows: [], pcts: [], on: new Set(), range: 0, log: false, opener: null, hi: null };
 const PALETTE = ["#d8392b", "#e8870e", "#b79500", "#1d7f49", "#1e88c8", "#6b4fd8", "#9b3a9d", "#555e69"];
 const RANGES = [["전체", 0], ["7일", 7 * 864e5], ["3일", 3 * 864e5], ["24시간", 864e5]];
 const hhmm = t => new Date(t).toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false });
