@@ -101,12 +101,17 @@
   #tm-cv { display: block; width: 100%; height: 300px; touch-action: pan-y; cursor: crosshair; }
   .tm-note { margin: .3rem 0 0; color: var(--muted); font-size: .78rem; }
   .tm-empty { padding: 2.5rem 1rem; text-align: center; color: var(--muted); }
-  #tm-tip { position: fixed; z-index: 60; display: none; pointer-events: none; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: .45rem .6rem; font-size: .8rem; box-shadow: 0 4px 16px rgba(0,0,0,.25); }
-  #tm-tip b.t { display: block; margin-bottom: .15rem; }
-  #tm-tip table { border-collapse: collapse; }
-  #tm-tip td { padding: .05rem 0 .05rem .8rem; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
-  #tm-tip td:first-child { text-align: left; padding-left: 0; color: var(--muted); }
-  #tm-tip td i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: .35rem; }
+  .tm-info { margin: .15rem 0 .5rem; padding: .5rem .7rem .6rem; background: var(--done-bg); border: 1px solid var(--line); border-radius: 8px; min-height: 5.6rem; }
+  .tm-info[hidden] { display: none; }
+  .tm-ih { display: flex; justify-content: space-between; align-items: baseline; gap: .6rem; flex-wrap: wrap; margin-bottom: .3rem; }
+  .tm-ih b { font-size: .95rem; }
+  .tm-ih small { color: var(--muted); font-size: .75rem; font-weight: 400; margin-left: .35rem; }
+  .tm-ih span { font-size: .8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .tm-ig { display: grid; grid-template-columns: repeat(auto-fill, minmax(138px, 1fr)); gap: .15rem .9rem; }
+  .tm-ig div { display: flex; align-items: center; gap: .35rem; font-size: .82rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .tm-ig i { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+  .tm-ig em { font-style: normal; color: var(--muted); }
+  .tm-ig b { margin-left: auto; }
 
   /* 모바일: 2열 + 카드 압축 */
   @media (max-width: 540px) {
@@ -164,11 +169,11 @@
       <div class="seg" id="tm-scale" role="group" aria-label="눈금"></div>
     </div>
     <div class="tm-leg" id="tm-leg"></div>
+    <div class="tm-info" id="tm-info"></div>
     <div class="tm-cvwrap"><canvas id="tm-cv" aria-label="시간대별 상위 % 컷 순위 꺾은선 그래프"></canvas></div>
     <p class="tm-note" id="tm-note"></p>
   </div>
 </div>
-<div id="tm-tip"></div>
 
 <footer>
   <div class="wrap">
@@ -340,7 +345,6 @@ function openTrend(ev, opener) {
 function closeTrend() {
   document.getElementById("tm").hidden = true;
   document.body.style.overflow = "";
-  hideTip();
   if (TREND.opener) TREND.opener.focus();
 }
 function renderOpts() {
@@ -389,7 +393,7 @@ function drawTrend() {
   wrap.querySelectorAll(".tm-empty").forEach(n => n.remove());
   const allRows = TREND.rows;
   if (allRows.length < 2) {
-    cv.style.display = "none"; note.textContent = "";
+    cv.style.display = "none"; note.textContent = ""; document.getElementById("tm-info").hidden = true;
     wrap.append(el("p", "tm-empty", "아직 시간대별 기록이 부족해서 그래프를 그릴 수 없어요. 데이터가 쌓이면 보여요."));
     return;
   }
@@ -442,28 +446,23 @@ function drawTrend() {
   }
   note.textContent = "기록 " + allRows.filter(r => !r.ext).length + "개 · " + hhmm(allRows[0].t) + " ~ " + hhmm(tEnd) + " (한국 시간) · 값이 바뀐 시점마다 기록돼요";
   cv._g = { rows, vis, X, L, pw, T, ph, t0, t1 };
+  showInfo(rows, vis);
 }
 
-function hideTip() { document.getElementById("tm-tip").style.display = "none"; if (TREND.hi != null) { TREND.hi = null; if (!document.getElementById("tm").hidden) drawTrend(); } }
-function showTip(ev, i) {
-  const cv = document.getElementById("tm-cv"), G = cv._g; if (!G) return;
-  const r = G.rows[i], tip = document.getElementById("tm-tip");
-  const t = el("b", "t", hhmm(r.t)), table = document.createElement("table");
-  G.vis.forEach(p => {
+function showInfo(rows, vis) {                 // 그래프 위 정보칸: 짚은 시점(없으면 가장 최근 값)의 순위를 보여 줌 — 그래프를 가리지 않음
+  const box = document.getElementById("tm-info"); box.hidden = false;
+  const picked = TREND.hi != null && rows[TREND.hi], r = picked || rows[rows.length - 1];
+  const head = el("div", "tm-ih"), left = el("b", "", hhmm(r.t));
+  left.append(el("small", "", picked ? "선택한 시점" : "가장 최근"));
+  head.append(left, el("span", "", r.total ? "참가자 " + nf.format(r.total) + "명" : ""));
+  const grid = el("div", "tm-ig");
+  vis.forEach(p => {
     if (!(r.r[p] > 0)) return;
-    const tr = document.createElement("tr"), a = document.createElement("td"), dot = document.createElement("i");
+    const row = document.createElement("div"), dot = document.createElement("i");
     dot.style.background = PALETTE[TREND.pcts.indexOf(p) % PALETTE.length];
-    a.append(dot, "상위 " + p + "%");
-    tr.append(a, el("td", "num", nf.format(r.r[p]) + "위")); table.append(tr);
+    row.append(dot, el("em", "", "상위 " + p + "%"), el("b", "", nf.format(r.r[p]) + "위")); grid.append(row);
   });
-  if (r.total) { const tr = document.createElement("tr"); tr.append(el("td", "", "참가자"), el("td", "num", nf.format(r.total) + "명")); table.append(tr); }
-  tip.replaceChildren(t, table); tip.style.display = "block";
-  const vw = Math.min(window.innerWidth, document.documentElement.clientWidth || window.innerWidth), touch = ev.pointerType === "touch";
-  const w = tip.offsetWidth, h = tip.offsetHeight;
-  let x = touch ? ev.clientX - w / 2 : ev.clientX + 14, y = touch ? ev.clientY - h - 28 : ev.clientY - h - 12;
-  if (x + w > vw - 8) x = touch ? vw - w - 8 : ev.clientX - w - 14;
-  if (x < 8) x = 8; if (y < 8) y = Math.min(ev.clientY + 22, window.innerHeight - h - 8);
-  tip.style.left = x + "px"; tip.style.top = y + "px";
+  box.replaceChildren(head, grid);
 }
 function onPointer(ev) {
   const cv = document.getElementById("tm-cv"), G = cv._g; if (!G) return;
@@ -471,14 +470,11 @@ function onPointer(ev) {
   let best = 0, bd = Infinity;
   G.rows.forEach((r, i) => { const d = Math.abs(G.X(r.t) - x); if (d < bd) { bd = d; best = i; } });
   if (TREND.hi !== best) { TREND.hi = best; drawTrend(); }
-  showTip(ev, best);
 }
 (function () {
   const cv = document.getElementById("tm-cv");
   cv.addEventListener("pointermove", onPointer);
   cv.addEventListener("pointerdown", onPointer);
-  cv.addEventListener("pointerleave", e => { if (e.pointerType !== "touch") hideTip(); });   // 터치는 손을 떼도 유지, 그래프 밖을 누르면 사라짐
-  document.addEventListener("pointerdown", e => { if (e.target !== cv && !e.target.closest("#tm-tip")) hideTip(); });
   document.getElementById("tm-close").addEventListener("click", closeTrend);
   document.getElementById("tm").addEventListener("click", e => { if (e.target.id === "tm") closeTrend(); });
   document.addEventListener("keydown", e => { if (e.key === "Escape" && !document.getElementById("tm").hidden) closeTrend(); });
